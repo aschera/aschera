@@ -1,0 +1,71 @@
+/* Main content wrapper*/
+.content {
+  background-color: #12294bd6;
+  padding: 1rem;
+  height: 100vh;
+}
+
+/* Top bar*/
+.header-container {
+  background-color: #12294B;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+
+.title h1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-family: 'Vollkorn', serif;
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Social media icon tree */
+.icons-container {
+  position: fixed;
+  bottom: 0;
+  right: 2rem;
+  left: 0rem;
+  min-height: 415px;
+  width: 500px;
+  border: 8px solid  #050d18;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-left: none;
+  border-bottom: none;
+  background-color: #12294B;
+}
+
+.icons-container > a:nth-child(1) div {
+  left: 115px;
+  top: 65px;
+}
+
+.icons-container > a:nth-child(2) div {
+  left: 105px;
+  top: 105px;
+}
+
+.icons-container > a:nth-child(3) div {
+  left: 0px;
+  top: 135px;
+}
+
+.icons-container > a:nth-child(4) div {
+  left: 100px;
+  top: 135px;
+}
+
+.icons-container > a:nth-child(5) div {
+  left: -50px;
+  top: 165px;
+}
+
+/* Hobby cards */
+.card {
+  max-width: 300px;
+}
