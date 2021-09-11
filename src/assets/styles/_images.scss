@@ -18,6 +18,35 @@
 	background-repeat: no-repeat;
 }
 
+.main-banner {
+  background: #214261 url(../images/main-banner-bg@2x.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.follow-me {
+  background: #214261 url(../images/contact-form@2x.jpg) no-repeat;
+  background-size: cover;
+}
+
+.featured-text {
+  background: #DBBD7F url(../images/follow-bg.png);
+  background-position: 50%;
+}
+
+.description-container {
+  background-color: #DBBD7F;
+  background-image: url(../images/description-moon-small.png);
+  background-position: left top;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+}
+
+.portrait {
+  background: url(../images/portrait.png) center;
+  background-size: cover;
+}
+
 .house-bg
 {
 	background-image: url(../images/green-room1.jpg);

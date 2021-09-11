@@ -6,59 +6,44 @@
 .content {
   position: relative;
   background-color: #12294bd6;
-    padding: 1rem;
-    height: 100vh;
-    width:100%;
-    overflow: hidden;
+  padding: 0;
+  height: 100vh;
+  width:100%;
+  overflow: hidden;
 }
 
-/* Top bar*/
-.header-container
-{
-  background-color: #12294B;
-  border-bottom: 1px solid black;
-  padding: 1rem;
-}
-
-.title{
-  h1 {
+h1,
+h2 {
     display:flex;
     flex-wrap: nowrap;
     justify-content: center;
     font-family: 'Vollkorn', serif;
-    color: white;
-    font-size: 3rem;
-    margin:0;
     padding:0;
-  }
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  right: 2rem;
-  left: 0rem;
-  min-height: 415px;
-  width: 500px;
+h1 {
+    font-size: 3rem;
+    color:#cdc3ff;
+    margin:0 0 1rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin:0;
+}
+
+.footer {
+  height: 100%;
+  width:100%;
 }
 
 /* Social media icon tree */
 .icons-container
 {
-  position: fixed;
-  bottom: 0;
-  right: 2rem;
-  left: 0rem;
-  min-height: 415px;
-  width: 500px;
-  //border: 8px solid  #050d18;
-  //border-radius: 4px;
-  //border-top-left-radius: 0;
-  //border-bottom-right-radius: 0;
-  //border-left: none;
-  //border-bottom: none;
-  //background-color: #12294B;
+  height: 100%;
+  width:100%;
 
+  /*
   > a:nth-child(1) div {
       left:115px;
       top: 65px;
@@ -79,33 +64,20 @@ footer {
     left:-50px;
     top: 165px;
   }
-
+*/
 }
 
 /* Copyright year and name*/
 .copyright-info{
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 15rem;
   color: white;
-  }
-
-  .portrait {
-    position: absolute;
-    left: 60%;
-    width: 500px;
-    top: 10%;
-    overflow: hidden;
-
-    img {
-      border-radius: 25px;
-    border: 8px solid black;
-    }
-  }
+}
 
 
-  /* Hobby cards */
-  .card {
+/* Hobby cards */
+.card {
   max-width: 200px;
 
   img {
@@ -114,4 +86,264 @@ footer {
   }
 }
 
+.work-experience {
+  height: 500px;
+}
 
+
+/* ------------------------------ */
+.main-banner {
+    padding: 56px 6.395348837% 88px;
+    position: relative;
+    text-align: center;
+
+    @media only screen and (max-width: 500px){
+      padding: 16px 32px 48px 32px;
+    }
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  position: relative;
+  z-index: 1;
+
+  @media only screen and (max-width: 500px) {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    font: 600 26px "ivypresto headline", serif;
+    color: #DBBD7F;
+
+    @media only screen and (max-width: 500px){
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+  }
+}
+
+.main-banner .main-banner-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 672px;
+  position: relative;
+  z-index: 10;
+
+  @media only screen and (max-width: 1024px) {
+    max-width: 700px;
+  }
+
+  h1 {
+    color: #FAF7EB;
+    font: 600 52px "ivypresto headline", serif;
+    line-height: 1.2727272727em;
+    margin-bottom: 24px;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 28px;
+    }
+  }
+
+   p {
+    color: #dec38b;
+    margin: 0 auto 64px auto;
+    width: 83.33333333%;
+    line-height: 1.4545454545em;
+
+    @media only screen and (max-width: 500px) {
+    font-size: 18px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+}
+
+.main-banner .button {
+  background: #FAF7EB;
+  color: #214261;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+}
+
+.button {
+  text-transform: uppercase;
+  font: 400 16px grad, serif;
+  letter-spacing: 0.075em;
+  line-height: 1.5em;
+  background: #DBBD7F;
+  border: none;
+  border-radius: 100px;
+  color: #214261;
+  cursor: pointer;
+  outline: none;
+  padding: 12px 32px 14px 32px;
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+}
+
+.logo-container {
+  width: 144px;
+  height: 144px;
+
+  @media only screen and (max-width: 500px){
+    display: block;
+    margin: 0 auto 16px auto;
+  }
+}
+
+header .contact-link {
+  text-transform: uppercase;
+  font: 400 16px grad, serif;
+  letter-spacing: 0.075em;
+  line-height: 1.5em;
+  color: #FAF7EB;
+
+  @media only screen and (max-width: 500px) {
+    padding: 16px;
+    font-size: 14px;
+  }
+}
+/* ------------------------------ */
+
+.social {
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 860px){
+    display: block;
+  }
+
+  a {
+    color: #DBBD7F;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  svg {
+    flex-shrink: 0;
+    fill: #DBBD7F;
+    margin-right: 12px;
+    width: 32px;
+  }
+
+  .follow-me {
+    font-size: 18px;
+    padding: 88px 6.395348837%;
+    width: 49.7%;
+    margin-right: 16px;
+    width: 29.65116279%;
+
+    @media only screen and (max-width: 860px) {
+    margin: 32px 32px 32px 0;
+    padding: 32px;
+    width: 100%;
+    }
+
+    h1 {
+      color: #FAF7EB;
+    }
+  }
+
+  .featured-text {
+    margin-left: 16px;
+    padding: 6.395348837%;
+    width: 68.02325581%;
+    width: 49.7%;
+    margin-left: 16px;
+
+    @media only screen and (max-width: 860px) {
+    margin-left: 0;
+    padding: 32px;
+    width: 100%;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 1.4545454545em;
+      color: #214261;
+  }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+
+    @media only screen and (max-width: 500px) {
+      margin: 16px 0;
+    }
+
+    li {
+      width: 50%;
+
+      a {
+        text-transform: uppercase;
+        font: 400 16px grad, serif;
+        letter-spacing: 0.075em;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+
+/* ------------------------------ */
+.about-me {
+  display: flex;
+
+  @media only screen and (max-width: 1024px) {
+    display: block;
+  }
+
+  @media only screen and (max-width: 860px) {
+      display: block;
+  }
+
+  .description-container {
+    display: flex;
+    margin: 32px 16px 0 0;
+    padding: 88px 6.395348837%;
+    width: 49.7%;
+    position: relative;
+
+    @media only screen and (max-width: 1024px)  {
+    display: block;
+    padding: 40px 6.39535% 64px 6.39535%;
+    width: 70%;
+    }
+
+    @media only screen and (max-width: 860px) {
+    margin: 32px 0 0 0;
+    width: 100%;
+    }
+  }
+
+  .portrait {
+    margin: 32px 0 0 16px;
+    width: 50%;
+
+    @media only screen and (max-width: 1024px) {
+      width: 30%;
+    }
+
+    @media only screen and (max-width: 860px){
+      background: none;
+      height: auto;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
