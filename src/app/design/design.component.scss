@@ -1,0 +1,100 @@
+/* ------------------------------ */
+h1 {
+	font: 600 44px "ivypresto headline", serif;
+	line-height: 1.25em;
+	padding-top: 16px;
+	margin-bottom: 24px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.4545454545em;
+}
+
+a {
+  text-decoration: none;
+  color: #214261;
+  text-decoration: underline;
+  transition: all 0.1s ease-in-out;
+}
+
+
+
+
+
+.design-talks {
+    position: relative;
+    display: flex;
+    background-color: #DBBD7F;
+    margin: 32px 0;
+    padding: 88px 6.395348837%;
+
+    @media only screen and (max-width: 1024px) {
+      padding: 40px 6.39535% 64px 6.39535%;
+  }
+
+  @media only screen and (max-width: 860px) {
+      padding: 40px 32px 48px 32px;
+  }
+
+  p {
+    margin-bottom: 32px;
+
+    @media only screen and (max-width: 860px) {
+      font-size: 16px;
+      }
+  }
+
+  .events {
+    border-top: 1px solid #214261;
+    margin: 0 0 75px 0;
+    display: table;
+    width: 100%;
+
+    h4 {
+      display: table-cell;
+      border-bottom: 1px solid #214261;
+      vertical-align: middle;
+      font: 600 26px "ivypresto headline", serif;
+      line-height: 1.25em;
+      font-size: 16px;
+      padding: 16px 0 16px 0;
+
+      @media only screen and (max-width: 1024px){
+          border-bottom: none;
+          padding: 0 16px 0 0;
+      }
+  }
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      border-bottom: 1px solid #214261;
+      display: block;
+      padding: 16px 0 12px 0;
+      position: relative;
+  }
+  }
+
+  .design-talks-content {
+    width: 70.66666667%;
+    position: relative;
+    z-index: 1;
+
+    @media only screen and (max-width: 860px) {
+      width: 100%;
+  }
+  }
+
+  .talks-circle {
+    width: 48.8372093%;
+    left: -25.58139535%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  }

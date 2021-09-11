@@ -7,6 +7,12 @@ import { BarComponent } from './bar/bar.component';
 import { PieComponent } from './pie/pie.component';
 import { ScatterComponent } from './scatter/scatter.component';
 import { ForceComponent } from './force/force.component';
+import { MainComponent } from './main/main.component';
+import { AboutComponent } from './about/about.component';
+import { RecentComponent } from './recent/recent.component';
+import { DesignComponent } from './design/design.component';
+import { SocialComponent } from './social/social.component';
+import { CourseComponent } from './course/course.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +20,13 @@ import { ForceComponent } from './force/force.component';
     BarComponent,
     PieComponent,
     ScatterComponent,
-    ForceComponent
+    ForceComponent,
+    MainComponent,
+    AboutComponent,
+    RecentComponent,
+    DesignComponent,
+    SocialComponent,
+    CourseComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

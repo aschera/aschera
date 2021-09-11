@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -112,3 +116,4 @@ body {
   }
 
 }
+

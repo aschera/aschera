@@ -1,0 +1,82 @@
+/* ------------------------------ */
+.about-me {
+    display: flex;
+
+    @media only screen and (max-width: 860px) {
+      flex-direction: column;
+    }
+
+
+    h1 {
+      font: 600 44px "ivypresto headline", serif;
+      line-height: 1.25em;
+      padding-top: 16px;
+      margin-bottom: 24px;
+      margin-left: 6rem;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 1.4545454545em;
+    margin-left: 3rem;
+
+    @media only screen and (max-width: 860px) {
+      font-size: 16px;
+      }
+
+      &:last-of-type {
+        margin-left: 0;
+      }
+  }
+
+  a {
+      color: #214261;
+      text-decoration: underline;
+  }
+
+
+    .description-container {
+      display: flex;
+      margin: 32px 16px 0 0;
+      padding: 88px 6.395348837%;
+      width: 49.7%;
+      position: relative;
+
+      @media only screen and (max-width: 1024px)  {
+      display: block;
+      padding: 40px 6.39535% 64px 6.39535%;
+      width: 70%;
+      }
+
+      @media only screen and (max-width: 860px) {
+      margin: 32px 0 0 0;
+      width: 100%;
+      }
+
+      .description {
+        align-self: center;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    .portrait {
+      margin: 32px 0 0 16px;
+      width: 50%;
+
+      @media only screen and (max-width: 1024px) {
+        width: 30%;
+      }
+
+      @media only screen and (max-width: 860px){
+        height: 500px;
+        margin-left: 0;
+        width: 100%;
+      }
+
+      img {
+        display: none;
+        max-width: 100%;
+    }
+    }
+  }

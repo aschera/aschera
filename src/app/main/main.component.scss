@@ -1,0 +1,128 @@
+h1 {
+	font: 600 44px "ivypresto headline", serif;
+	line-height: 1.25em;
+	padding-top: 16px;
+	margin-bottom: 24px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.4545454545em;
+}
+
+a {
+  text-decoration: none;
+  color: #DBBD7F;
+  transition: all 0.1s ease-in-out;
+}
+
+
+
+.main-banner {
+    padding: 56px 6.395348837% 88px;
+    position: relative;
+    text-align: center;
+
+    @media only screen and (max-width: 500px){
+      padding: 16px 32px 48px 32px;
+    }
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  position: relative;
+  z-index: 1;
+
+  @media only screen and (max-width: 500px) {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    font: 600 26px "ivypresto headline", serif;
+    color: #DBBD7F;
+
+    @media only screen and (max-width: 500px){
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+  }
+}
+
+.main-banner .main-banner-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 672px;
+  position: relative;
+  z-index: 10;
+
+  @media only screen and (max-width: 1024px) {
+    max-width: 700px;
+  }
+
+  h1 {
+    color: #FAF7EB;
+    font: 600 52px "ivypresto headline", serif;
+    line-height: 1.2727272727em;
+    margin-bottom: 24px;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 28px;
+    }
+  }
+
+   p {
+    color: #dec38b;
+    margin: 0 auto 64px auto;
+    width: 83.33333333%;
+    line-height: 1.4545454545em;
+
+    @media only screen and (max-width: 500px) {
+    font-size: 18px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+}
+
+.main-banner .button {
+  background: #FAF7EB;
+  color: #214261;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+
+  &:hover {
+    background: #DBBD7F;
+}
+}
+
+.logo-container {
+  width: 144px;
+  height: 144px;
+
+  @media only screen and (max-width: 500px){
+    display: block;
+    margin: 0 auto 16px auto;
+  }
+}
+
+header .contact-link {
+  text-transform: uppercase;
+  font: 400 16px grad, serif;
+  letter-spacing: 0.075em;
+  line-height: 1.5em;
+  color: #FAF7EB;
+
+  @media only screen and (max-width: 500px) {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    color: #DBBD7F;
+}
+}

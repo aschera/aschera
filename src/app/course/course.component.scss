@@ -1,0 +1,131 @@
+/* ------------------------------ */
+h1 {
+	font: 600 44px "ivypresto headline", serif;
+	line-height: 1.25em;
+	padding-top: 16px;
+	margin-bottom: 24px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.4545454545em;
+
+  @media only screen and (max-width: 1024px){
+    font-size: 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #DBBD7F;
+  transition: all 0.1s ease-in-out;
+}
+
+
+
+.courses {
+    background-color: #C4B8AC;
+    color: #140B05;
+    margin-top: 32px;
+    padding: 88px 6.395348837% 32px 6.395348837%;
+    position: relative;
+  }
+
+  .recent-posts-header {
+    margin-bottom: 56px;
+    text-align: center;
+
+    p {
+      margin: 24px auto;
+      width: 61.62790698%;
+
+      @media only screen and (max-width: 1150px){
+       width: 75%;
+      }
+
+      a {
+        border-bottom: 1px solid #DBBD7F;
+        display: inline-block;
+        margin-top: 32px;
+        text-transform: uppercase;
+        font: 400 15px grad, serif;
+        letter-spacing: 0.075em;
+        line-height: 1.5em;
+
+        &:hover {
+          border-bottom: 1px solid #FAF7EB;
+          color: #FAF7EB;
+      }
+      }
+    }
+  }
+
+  .posts-container {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1024px) {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding:0;
+    }
+
+    img {
+      display: block;
+      opacity: 0.95;
+      transition: all 0.1s ease-in-out;
+      width: 100%;
+      filter: url(#owltastic-images);
+  }
+
+    li {
+      align-self: stretch;
+      background: #FAF7EB;
+      margin: 0 0 88px 0;
+      position: relative;
+      width: 31.22362869%;
+
+      @media only screen and (max-width: 1024px){
+        margin: 32px auto;
+        max-width: 700px;
+        width: 100%;
+      }
+
+      h2 {
+        margin: 32px 0 8px 0;
+        text-align: center;
+    }
+
+    span {
+      text-transform: uppercase;
+      font: 400 16px grad, serif;
+      letter-spacing: 0.075em;
+      line-height: 1.5em;
+      background: #DBBD7F;
+      color: #214261;
+      display: block;
+      font-size: 16px;
+      line-height: 1.5em;
+      margin-top: 64px;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      padding: 16px 32px;
+      position: absolute;
+      text-align: center;
+  }
+
+      a {
+        color: #214261;
+        display: block;
+        padding: 32px 32px 80px 32px;
+
+        @media only screen and (max-width: 1024px){
+            padding: 1rem
+          }
+    }
+    }
+  }
