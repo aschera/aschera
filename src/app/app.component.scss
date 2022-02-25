@@ -1,57 +1,26 @@
+@import url(../assets/styles/_variables.scss);
+
 // ----------------------------------------------------- //
 // --------------- App Component -- ---------------------//
 // ----------------------------------------------------- //
 
-h1 {
-	font: 600 44px "ivypresto headline", serif;
-	line-height: 1.25em;
-	padding-top: 16px;
-	margin-bottom: 24px;
-}
-
-p {
-  font-size: 22px;
-  line-height: 1.4545454545em;
-}
-
-a {
-  text-decoration: none;
-  color: #DBBD7F;
-  transition: all 0.1s ease-in-out;
-}
-
-/* ------------------------------ */
-
 footer {
-  color: #FAF7EB;
+  color: var(--white-text);
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-top: 32px;
-  padding: 32px 6.395348837% 32px;
+  margin-top: var(--double-space);
+  padding: var(--double-space) 6.395348837% var(--double-space);
+
+  p {
+    color: var(--white-text);
+  }
 
   @media only screen and (max-width: 860px){
     display: block;
     text-align: center;
   }
 
-  h2 {
-    height: 100%;
-
-    @media only screen and (max-width: 860px) {
-      margin-bottom: 32px;
-    }
-}
-
-  p {
-    text-transform: uppercase;
-    font: 400 16px grad, serif;
-    letter-spacing: 0.075em;
-    line-height: 1.5em;
-    flex-shrink: 0;
-    font-size: 16px;
-    text-align: right;
-}
 }
 
 footer, footer .tagline, footer p  {
@@ -60,3 +29,13 @@ footer, footer .tagline, footer p  {
     text-align: center;
   }
 }
+
+.divider {
+  height: 15rem;
+
+  &.small {
+    height: 1rem;
+  }
+}
+
+

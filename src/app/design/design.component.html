@@ -1,34 +1,25 @@
+<section class="design-talks">
 
-  <section class="design-talks">
-    <div class="design-talks-content">
-      <h1>Recent Articles</h1>
-      <p>
-        I write a lot of essays and articles during my studies,
-        and also as a hobby for the things that I want to learn.
-        Learning is my biggest passion.
-        Writing keeps me remmbering and structuring my thoughts.
-      </p>
-      <div class="events">
-
-        <ul>
-          <li>
-            <a href="" target="_blank">
-              <h4>R - Subsetting</h4> <span>(not published yet) </span>
-             </a>
-          </li>
-
-          <li>
-            <a href="" target="_blank">
-              <h4>The Oxford Happiness Questionaire</h4> <span>(not published yet) </span>
-             </a>
-          </li>
-
-        </ul>
-
-
+  <div class="design-talks-content">
+    <h1 class="bright">
+      {{title}}
+    </h1>
+    <p class="intro">
+      {{ intro }}
+    </p>
+    <div class="events">
+      <ul class="wide">
+        <li *ngFor="let fruit of list">
+          <a href="{{ fruit.link }}" target="_blank" alt="link to post">
+            <img src="../../assets/images/{{fruit.id}}.png" alt="icon id " class="img-id">
+            <p>
+              {{ fruit.title }}
+            </p>
+          </a>
+        </li>
+      </ul>
     </div>
-      <a href="" target="_blank">See all on Medium
-      </a>
-    </div>
+    <a href="{{ medium }}" target="_blank">See all on Medium </a>
+  </div>
 
-  </section>
+</section>

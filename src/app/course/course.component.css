@@ -1,0 +1,88 @@
+:root {
+  --dark-purple: #214261;
+  --color-2: #DBBD7F;
+  --color-5: #FAF7EB;
+  --color-7: #C4B8AC;
+  --color-8: #140B05;
+  --blue: #9DAAF2;
+  --orange: #FF6A3D;
+  --yellow: #F4DB7D;
+  --red: #dc3545;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --black-text: #1A2238;
+  --white-text:  #FFFFFF;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-serif: 'Vollkorn', serif;
+  --font-family-monospace: "Courier New",monospace;
+}
+
+.courses {
+  background-color: #C4B8AC;
+  color: var(--black-text);
+  margin-top: 2rem;
+  padding: 88px 6.395348837% 32px 6.395348837%;
+  position: relative;
+}
+
+.recent-posts-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.course-description {
+  margin: 2rem auto;
+  width: 61.62790698%;
+}
+
+@media only screen and (max-width: 1150px) {
+  .course-description {
+    width: 75%;
+  }
+}
+
+.posts-container {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+  .posts-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.course-item {
+  align-self: stretch;
+  background: #FAF7EB;
+  margin: 0 0 88px 0;
+  position: relative;
+  width: 31.22362869%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .course-item {
+    margin: 2rem auto;
+    max-width: 700px;
+    width: 100%;
+  }
+}
+
+.course-img {
+  display: block;
+  opacity: 0.95;
+  transition: all 0.1s ease-in-out;
+  width: 100%;
+  filter: url(#owltastic-images);
+}

@@ -1,5 +1,4 @@
 /* ------------------------------ */
-
 .recent-posts {
   color: #faf7eb;
   margin-top: 32px;
@@ -17,15 +16,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .posts-container {
     display: block;
     margin: 0 auto;
     text-align: center;
   }
 }
 
-.posts-image {
+img {
   display: block;
   opacity: 0.95;
   transition: all 0.1s ease-in-out;

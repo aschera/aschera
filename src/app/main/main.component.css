@@ -1,15 +1,15 @@
-
-
 .main-banner {
-    padding: 56px 6.395348837% 88px;
-    position: relative;
-    text-align: center;
-    background: var(--orange);
-background: linear-gradient(0deg, var(--orange) 0%, rgba(0,0,6,0.8071603641456583) 35%, rgba(0,2,3,1) 100%);
+  padding: 56px 6.395348837% 88px;
+  position: relative;
+  text-align: center;
+  background: var(--orange);
+  background: linear-gradient(0deg, var(--orange) 0%, rgba(0, 0, 6, 0.80716) 35%, #000203 100%);
+}
 
-    @media only screen and (max-width: 500px){
-      padding: 16px 32px 48px 32px;
-    }
+@media only screen and (max-width: 500px) {
+  .main-banner {
+    padding: 16px 32px 48px 32px;
+  }
 }
 
 header {
@@ -19,8 +19,10 @@ header {
   margin-bottom: 64px;
   position: relative;
   z-index: 1;
+}
 
-  @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
+  header {
     display: block;
     margin-bottom: 32px;
   }
@@ -29,16 +31,17 @@ header {
 .main-banner .main-banner-content {
   margin: 0 auto;
   width: 100%;
-  min-height:10rem;
+  min-height: 10rem;
   max-width: 672px;
   position: relative;
   z-index: 10;
+}
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .main-banner .main-banner-content {
     max-width: 700px;
   }
 }
-
 
 .main-banner .button {
   background: #FAF7EB;
@@ -46,10 +49,10 @@ header {
   z-index: 1;
   position: relative;
   margin: 0 auto;
-
-  &:hover {
-    background: #DBBD7F;
 }
+
+.main-banner .button:hover {
+  background: #DBBD7F;
 }
 
 .box {
@@ -66,7 +69,6 @@ header {
   height: 190px;
   z-index: 0;
   position: absolute;
-
 }
 
 .inner-lower {
@@ -81,7 +83,7 @@ header {
 
 .white {
   opacity: .1;
-  color: rgba(255,255,255,1);
+  color: white;
   border-radius: 9999px;
   width: 100%;
   height: 360px;
@@ -111,8 +113,10 @@ header {
 .logo-container {
   width: 144px;
   height: 144px;
+}
 
-  @media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
+  .logo-container {
     display: block;
     margin: 0 auto 16px auto;
   }
@@ -124,13 +128,15 @@ header .contact-link {
   letter-spacing: 0.075em;
   line-height: 1.5em;
   color: #FAF7EB;
+}
 
-  @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
+  header .contact-link {
     padding: 16px;
     font-size: 14px;
   }
-
-  &:hover {
-    color: #DBBD7F;
 }
+
+header .contact-link:hover {
+  color: #DBBD7F;
 }

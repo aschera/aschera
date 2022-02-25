@@ -88,32 +88,37 @@ select {
   }
 }
 
-@font-face
-{
-	font-family: 'miso-bold';
-    src:
-         url('../fonts/miso-bold.woff') format('woff'),
-         url('../fonts/miso-bold.ttf') format('truetype'),
-}
-
 html, body {
-  font-family: 'Vollkorn', serif;
+  font-family: var(--font-family-serif1);
   background-color: transparent;
   background: transparent;
   max-width:100%;
   padding: 0;
   margin:0;
+  line-height: 1.2;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 32px;
-  line-height: 1;
+  --font-size: $regular-space;
+  font-family: var(--font-family-serif1);
+      font-size: var(--font-size);
+      line-height: calc( var(--font-size) * 1.5);
+      line-height: 1.5em;
+      letter-spacing: 0.12em;
+      word-spacing: 0.16em;
+      padding: var(--double-space) 0;
 
-  @media only screen and (max-width: 500px) {
-    padding: 16px;
+  background-color: var(--black-text);
+  background: var(--black-text);
+
+      @media only screen and (max-width: 500px) {
+        padding: $regular-space;
+      }
+
   }
 
-}
+  p {
+    font-family: var(--font-family-serif2);
+    margin-bottom: 2em;
+   }
 

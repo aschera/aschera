@@ -5,8 +5,8 @@
 .icon
 {
 	position: relative;
-	width: 50px;
-	height: 50px;
+	width: $icon-width;
+	height: $icon-width;
 	display: inline-block;
 }
 
@@ -19,26 +19,26 @@
 }
 
 .main-banner {
-  background: #214261 url(../images/main-banner-bg@2x.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+  background: var(--dark-purple);
 }
 
 .follow-me {
-  background: #214261 url(../images/contact-form@2x.jpg) no-repeat;
-  background-size: cover;
+  background-color: #FCF5E4;
+  //background-image: url(../images/elements.png);
+  //background-repeat: no-repeat;
+  background-size: 50% 100%;
 }
 
 .featured-text {
-  background: #DBBD7F url(../images/follow-bg.png);
+  //background: var(--bright-yellow) url(../images/follow-bg.png);
   background-position: 50%;
 }
 
 .description-container {
-  background-color: #DBBD7F;
-  background-image: url(../images/description-moon-small.png);
+  background-color: var(--bright-yellow);
+  background-image: url(../images/line1.png);
   background-position: left top;
-  background-size: auto auto;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -48,45 +48,29 @@
 }
 
 .recent-posts {
-  background: url(../images/recent-posts@2x.jpg) no-repeat;
+  //background: url(../images/recent-posts@2x.jpg) no-repeat;
   background-size: cover;
 }
 
 .design-talks,
 .logo-container {
-  background: url(../images/tiny-bird.png) bottom right no-repeat;
+ // background: url(../images/tiny-bird.png) bottom right no-repeat;
   background-size: 161px;
 }
 
 footer {
-  background: url(../images/bg-star-chart.jpg) no-repeat;
+  //background: url(../images/bg-star-chart.jpg) no-repeat;
   background-size: 100%;
 }
 
 .house-bg
 {
-	background-image: url(../images/green-room1.jpg);
+	//background-image: url(../images/green-room1.jpg);
 background-size:cover;
 }
 
 .tree-bg
 {
-	background-image: url(../images/tree.bg.gif);
+	//background-image: url(../images/tree.bg.gif);
 }
 
-
-.icon-email
-{
-	background-image: url(../images/icon-email.png);
-}
-
-.icon-facebook
-{
-	background-image: url(../images/icon-facebook.png);
-}
-
-
-.icon-linkedin
-{
-	background-image: url(../images/icon-linkedin.png);
-}

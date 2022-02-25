@@ -1,129 +1,47 @@
 
-h1 {
-	font: 600 44px "ivypresto headline", serif;
-	line-height: 1.25em;
-	padding-top: 16px;
-	margin-bottom: 24px;
-}
-
-p {
-  font-size: 22px;
-  line-height: 1.4545454545em;
-}
-
-a {
-  text-decoration: none;
-  color: #DBBD7F;
-  transition: all 0.1s ease-in-out;
-  text-decoration: underline;
-}
-
-
 /* ------------------------------ */
 
 .social {
   display: flex;
   justify-content: space-between;
+  padding: var(--double-space);
 
   @media only screen and (max-width: 860px){
     display: block;
   }
+}
 
-  a {
-    color: #DBBD7F;
-    display: flex;
-    align-items: center;
-    padding: 8px 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.follow-me {
+  width: 49.7%;
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 2rem;
 
-    &:hover {
-      color: #FAF7EB;
-      text-decoration: underline;
-
-      svg {
-        fill: #FAF7EB;
-        transition: all 0.1s ease-in-out;
-    }
-  }
-  }
-
-  svg {
-    flex-shrink: 0;
-    fill: #DBBD7F;
-    margin-right: 6px;
-    width: 32px;
-  }
-
-  .follow-me {
-    font-size: 18px;
-    padding: 88px 6.395348837%;
-    width: 49.7%;
-    margin-right: 16px;
-    width: 46.651163%;
-
-    @media only screen and (max-width: 860px) {
-    margin: 32px 32px 32px 0;
-    padding: 32px;
-    width: 100%;
-    }
-
-    h1 {
-      color: #FAF7EB;
-    }
-  }
-
-  .featured-text {
-    margin-left: 16px;
-    padding: 6.395348837%;
-    width: 68.02325581%;
-    width: 49.7%;
-    margin-left: 16px;
-
-    @media only screen and (max-width: 860px) {
-    margin-left: 0;
-    padding: 32px;
-    width: 100%;
-    }
-
-    p {
-      font-size: 22px;
-      line-height: 1.4545454545em;
-      color: #214261;
-    }
-
-    a {
-      color: #214261;
-      display: inline;
-    }
-  }
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 8px;
-    padding: 0;
-
-    @media only screen and (max-width: 500px) {
-      margin: 16px 0;
-    }
-
-    li {
-      width: 50%;
-
-      a {
-        text-transform: uppercase;
-        font: 400 16px grad, serif;
-        letter-spacing: 0.075em;
-        line-height: 1.5em;
-
-          @media only screen and (max-width: 860px) {
-            font-size: 14px;
-            letter-spacing: 0.035em;
-          }
-      }
-    }
+  @media only screen and (max-width: 860px) {
+  margin: 32px 32px 32px 0;
+  padding: 32px;
+  width: 100%;
   }
 }
 
+.featured-text {
+  background-color: var(--bright-pink);
+  margin-left: 16px;
+  padding: 6.395348837%;
+  width: 49.7%;
+  margin-left: 1rem;
+  margin-top: 2rem;
 
+  p {
+    color: var(--white-text);
+  }
+
+  @media only screen and (max-width: 860px) {
+  margin-left: 0;
+  padding: 32px;
+  width: 100%;
+  }
+}

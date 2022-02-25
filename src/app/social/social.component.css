@@ -1,0 +1,43 @@
+/* ------------------------------ */
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 860px) {
+  .social {
+    display: block;
+  }
+}
+
+.follow-me {
+  font-size: 18px;
+  padding: 88px 6.395348837%;
+  width: 49.7%;
+  margin-right: 16px;
+  width: 46.651163%;
+}
+
+@media only screen and (max-width: 860px) {
+  .follow-me {
+    margin: 32px 32px 32px 0;
+    padding: 32px;
+    width: 100%;
+  }
+}
+
+.featured-text {
+  margin-left: 16px;
+  padding: 6.395348837%;
+  width: 68.02325581%;
+  width: 49.7%;
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: 860px) {
+  .featured-text {
+    margin-left: 0;
+    padding: 32px;
+    width: 100%;
+  }
+}

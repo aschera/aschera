@@ -1,5 +1,4 @@
 /* ------------------------------ */
-
 .design-talks {
   position: relative;
   display: flex;
@@ -13,8 +12,10 @@
   width: 70.66666667%;
   position: relative;
   z-index: 1;
+}
 
-  @media only screen and (max-width: 860px) {
+@media only screen and (max-width: 860px) {
+  .design-talks-content {
     width: 100%;
   }
 }
@@ -38,17 +39,15 @@
 
 a {
   transition: all 0.1s ease-in-out;
+}
 
-  p {
-    transition: all 0.1s ease-in-out;
-    border-bottom: solid .1rem var(--white-text);
-    color: var(--white-text);
-  }
+a p {
+  transition: all 0.1s ease-in-out;
+  border-bottom: solid 0.1rem var(--white-text);
+  color: var(--white-text);
+}
 
-  &:hover {
-    p {
-      border-bottom: solid .1rem var(--orange);
-      color: var(--orange);
-    }
-  }
+a:hover p {
+  border-bottom: solid 0.1rem var(--orange);
+  color: var(--orange);
 }
