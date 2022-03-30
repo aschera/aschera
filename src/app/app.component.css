@@ -1,11 +1,15 @@
 @import url(../assets/styles/_variables.scss);
 footer {
-  color: var(--color-5);
+  color: var(--white-text);
   align-items: center;
   display: flex;
   justify-content: space-between;
   margin-top: var(--double-space);
   padding: var(--double-space) 6.395348837% var(--double-space);
+}
+
+footer p {
+  color: var(--white-text);
 }
 
 @media only screen and (max-width: 860px) {
@@ -23,7 +27,7 @@ footer {
 }
 
 .divider {
-  height: 15rem;
+  height: 30rem;
 }
 
 .divider.small {

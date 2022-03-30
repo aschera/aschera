@@ -7,19 +7,20 @@
     <p class="intro">
       {{ intro }}
     </p>
+
     <div class="events">
       <ul class="wide">
-        <li *ngFor="let fruit of list">
-          <a href="{{ fruit.link }}" target="_blank" alt="link to post">
-            <img src="../../assets/images/{{fruit.id}}.png" alt="icon id " class="img-id">
-            <p>
-              {{ fruit.title }}
+        <li *ngFor="let i of list" class="article">
+          <a href="{{ i.link }}" target="_blank" alt="link to post" class="orange">
+            <img src="../../assets/images/{{i.id}}.png" alt="icon id " class="img-id">
+            <p class="article-title">
+              {{ i.title }}
             </p>
           </a>
         </li>
       </ul>
     </div>
-    <a href="{{ medium }}" target="_blank">See all on Medium </a>
+    <a class="strike brown-link" href="{{ medium }}" target="_blank">See all on Medium </a>
   </div>
 
 </section>

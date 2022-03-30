@@ -2,12 +2,20 @@
 .mat-h1,
 .mat-headline,
 .mat-typography h1 {
+  font-family: var(--font-family-serif1);
   font-size: 44px;
   font-weight: 600;
-  line-height: 1.25em;
-  padding-top: 16px;
-  margin-bottom: 24px;
-  margin-left: 6rem;
+  line-height: 1.5em;
+  padding: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  border: solid #e1e1e1;
+  border: solid var(--nyh-color-grey-lighter);
+  border-width: 1px 0 0;
+  color: var(--white-text);
+  width: 35vw;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 500px) {
@@ -15,63 +23,93 @@
 .mat-headline,
 .mat-typography h1 {
     font-size: 28px;
+    width: 50vw;
   }
 }
 
 h1.yellow {
-  color: var(--dark-purple);
-  background-color: var(--white-text);
-  padding: 0.5rem;
+  font-family: var(--font-family-serif1);
+  color: var(--bright-yellow);
+  width: 100%;
   text-align: center;
-}
-
-h1.yellow::after {
-  color: #f2de18;
-  content: '\263C';
 }
 
 h1.bright {
+  font-family: var(--font-family-serif1);
   color: var(--white-text);
-  padding: 0.5rem 0;
-  text-align: left;
+  background-color: var(--dark-moss-green);
+  padding: 0.5rem;
   margin: 0;
+  position: relative;
+  top: -3rem;
+  left: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 500px) {
+  h1.bright {
+    margin: 0;
+    width: 100%;
+    left: 0rem;
+  }
 }
 
 h1.dark-purple {
+  font-family: var(--font-family-serif1);
   color: var(--white-text);
   padding: 0.5rem;
   margin: 0;
-  text-align: center;
 }
 
 h1.dark-purple::after {
   color: var(--bright-yellow);
 }
 
-h1.orange {
-  color: var(--orange);
+h1.purple {
+  font-family: var(--font-family-serif1);
+  background-color: var(--purple);
+  color: var(--white-text);
   padding: 0.5rem;
-  margin: 0;
-  text-align: center;
+  margin: 0 1rem 0 0;
+  transition: all 0.5s ease-in-out;
 }
 
-h1.orange span {
-  color: var(--white-text);
+@media only screen and (max-width: 500px) {
+  h1.purple {
+    margin: 0;
+    width: 100%;
+    right: 0rem;
+  }
 }
 
 h1.pink {
-  color: var(--pink);
+  font-family: var(--font-family-serif1);
+  background-color: var(--pink);
+  color: var(--white-text);
   padding: 0.5rem;
   margin: 0;
   text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 
-h1.pink span {
-  color: var(--white-text);
+@media only screen and (max-width: 500px) {
+  h1.pink {
+    margin: 0;
+    width: 100%;
+    left: 0rem;
+  }
+}
+
+.purple,
+.pink {
+  position: relative;
+  top: -3rem;
+  right: -3rem;
 }
 
 /* -------------------------------H2--------------------------- */
 h2 {
+  font-family: var(--font-family-serif2);
   font-size: 32px;
   margin: 32px 0 8px 0;
   text-align: center;
@@ -79,7 +117,8 @@ h2 {
 }
 
 h2.orange {
-  color: var(--orange);
+  font-family: var(--font-family-serif2);
+  color: var(--dark-moss-green);
   opacity: 0.6;
   padding: 0.5rem;
   margin: 0;
@@ -92,7 +131,8 @@ h2.orange {
 
 /* -------------------------------p--------------------------- */
 p {
-  font-size: 16px;
+  font-family: var(--font-family-serif1);
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.4545454545em;
   color: var(--black-text);
@@ -110,7 +150,7 @@ ul.narrow {
   align-content: center;
   margin-top: 8px;
   padding: 0;
-  width: 50%;
+  transition: all 0.5s ease-in-out;
 }
 
 ul.narrow li {
@@ -130,9 +170,9 @@ ul.wide {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  margin-top: 8px;
+  margin: 4rem 0 4rem 0;
   padding: 0;
-  width: 100%;
+  transition: all 0.5s ease-in-out;
 }
 
 ul.wide li {
@@ -153,7 +193,7 @@ ul.wide li p {
 li {
   margin: 0 1rem 1rem 0;
   width: 8rem;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 li:hover a {
@@ -176,10 +216,51 @@ li a {
 
 /* -------------------------------a--------------------------- */
 a {
+  font-family: var(--font-family-serif2);
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+  color: var(--white-text);
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.1s ease-in-out;
+}
+
+a:hover, a:focus {
+  text-decoration: line-through;
+}
+
+a.strike {
+  color: var(--bright-pink);
+  padding: 0.25rem;
+  transition: all 0.1s ease-in-out;
+}
+
+a.strike:hover, a.strike:focus {
+  text-decoration: line-through;
+}
+
+a.strike.brown-link {
+  color: var(--moss-green);
+}
+
+a.strike.yellow-link {
+  color: var(--bright-yellow);
+}
+
+a.orange {
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+a.orange p {
+  color: var(--white-text);
+}
+
+a.orange:hover p {
+  text-decoration: none;
+  color: var(--moss-green);
 }
 
 /* -------------------------------span--------------------------- */
@@ -226,4 +307,9 @@ svg #youtube-color:hover {
 svg:hover {
   fill: var(--bright-pink);
   transition: all 0.1s ease-in-out;
+}
+
+b {
+  font-weight: 700;
+  font-family: var(--font-family-serif1);
 }

@@ -3,27 +3,52 @@
   display: flex;
   padding: var(--double-space);
   margin-bottom: 5rem;
+  transition: all 0.5s ease-in-out;
 
   @media only screen and (max-width: 860px) {
     flex-direction: column;
   }
 
   .description-block {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      color: var(--moss-green);
+    }
   }
 
-  p {
-    text-indent: 2em;
-    margin-left: 3rem;
-    margin-bottom: 1.5rem;
-    float: left;
-    width: 80%;
-    border-bottom: solid 0.15rem #f2de18;
+  ul {
+    padding: 0;
+    margin: 0;
 
-    &:nth-of-type(even) {
-      text-align: right;
-      float: right;
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid #f2de18;
+
+      a {
+        padding: 1rem;
+        display: inline-block;
+      }
     }
+  }
+
+  a {
+    color: #f2de18;
+  }
+
+  .description-text {
+    font-family: var(--font-family-serif2);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white-text);
+    text-indent: 2em;
+    margin: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
 
     @media only screen and (max-width: 860px) {
       font-size: 16px;
@@ -36,39 +61,53 @@
 
   .description-container {
     display: flex;
-    margin: 32px 16px 0 0;
-    padding: 88px 6.395348837%;
-    width: 49.7%;
-    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: flex-end;
+
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+
+    margin-left: var(--regular-space);
+    margin-top: var(--double-space);
+    padding: var(--regular-space);
+    width: 40%;
+    border: solid 0.15rem #f2de18;
+    transition: all 0.5s ease-in-out;
 
     @media only screen and (max-width: 1024px) {
-      display: block;
-      padding: 40px 6.39535% 64px 6.39535%;
-      width: 70%;
+      border-bottom: none;
     }
 
     @media only screen and (max-width: 860px) {
       margin: 32px 0 0 0;
       width: 100%;
     }
+  }
 
-    .description {
-      align-self: center;
-      position: relative;
-      z-index: 1;
+  .description {
+    align-self: center;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    left: -25px;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
 
-      h1 {
-        color: var(--dark-purple);
-      }
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+      left: 0;
     }
   }
 
   .portrait {
     margin: 1px 30px -53px -70px;
     width: 50%;
+    transition: all 0.5s ease-in-out;
 
     @media only screen and (max-width: 1024px) {
-      width: 30%;
+      width: 40%;
     }
 
     @media only screen and (max-width: 860px) {

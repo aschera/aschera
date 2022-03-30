@@ -2,16 +2,24 @@
 .design-talks {
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: var(--double-space);
 }
 
 .design-talks-content {
-  background-color: var(--dark-moss-green);
-  padding: 1rem;
-  width: 70.66666667%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  border: 1px solid var(--dark-moss-green);
+  margin-top: var(--double-space);
+  padding: var(--regular-space);
   position: relative;
   z-index: 1;
+  transition: all 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 860px) {
@@ -37,17 +45,27 @@
   margin-right: .5rem;
 }
 
-a {
-  transition: all 0.1s ease-in-out;
+.article a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.5s ease-in-out;
 }
 
-a p {
-  transition: all 0.1s ease-in-out;
-  border-bottom: solid 0.1rem var(--white-text);
-  color: var(--white-text);
+@media only screen and (max-width: 860px) {
+  .article a {
+    width: 70vw;
+  }
 }
 
-a:hover p {
-  border-bottom: solid 0.1rem var(--orange);
-  color: var(--orange);
+.article-title {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.5s ease-in-out;
 }

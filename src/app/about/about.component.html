@@ -1,52 +1,32 @@
-<section class="about-me">
-  <div class="description-container">
-    <div class="description">
-      <h1 class="yellow">Hey! I’m Christina</h1>
+<section class="about-me" id="about">
+    <div class="description-container">
+        <div class="description">
+            <h1 class="yellow">Hey! I’m Christina</h1>
 
-      <div class="description-block">
-        <p>
-          I’m an <b>Front end developer</b> who’s been creating experiences for
-          the web for some years.
-          <br />
-          Before that I was a master of problem-solving tech-support for Canon
-          and Samsung.
-        </p>
+            <div class="description-block">
 
-        <p>
-          Right now I work at
-          <a class="underline" href="https://www.novacura.com/" target="_blank"
-            >Novacura</a
-          >
-          with modern web technologies such as Angular, Typescript and Azure.
-        </p>
+                <h3>Who</h3>
+                  <div [innerHTML]="htmlStr1" class="description-text"></div>
 
-        <p>
-          I'm also currently studying. For a <b>B.A. in Computer Science</b> at
-          the
-          <a class="underline" href=" https://www.uopeople.edu/" target="_blank"
-            >University of the People.</a
-          >
-          <br />
-        </p>
-        <p>
-          I'm not looking for new work right now, but do still enjoy the
-          occasional email. And if a really good offer comes along... well who
-          knows :)
-        </p>
-      </div>
+                <h3>Education</h3>
+                  <div [innerHTML]="htmlStr2" class="description-text"></div>
+
+                <h3>Hobbies</h3>
+                  <div [innerHTML]="htmlStr3" class="description-text"></div>
+
+
+                <ul>
+                  <li>
+                      <a href="https://app.pluralsight.com/profile/christina-bagh" alt="pluralsight profile" target="_blank" noreferrer>
+                         Pluralsight profile
+                      </a>
+                  </li>
+              </ul>
+            </div>
+        </div>
     </div>
-    <!-- /end description -->
-
-    <!-- <a class="button" href="mailto:aschera@gmail.com">Email me </a> -->
-  </div>
-  <!-- /end description-container -->
-
-  <div class="portrait">
-    <img
-      class="portrait-image"
-      src="../assets/images/portrait.png"
-      alt="Portrait of Christina Bögh"
-    />
-  </div>
-  <!-- /end portrait -->
+    <div class="portrait">
+        <img class="portrait-image" src="../assets/images/portrait.png" alt="Portrait of Christina Bögh"/>
+    </div>
 </section>
+
