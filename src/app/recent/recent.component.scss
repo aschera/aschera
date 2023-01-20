@@ -1,59 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Open+Sans:700);
 
-/* ------------------------------ */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
 
 .recent {
-  display: flex;
-  justify-content: space-between;
-  padding: var(--double-space);
-  transition: all 0.5s ease-in-out;
-
-  @media only screen and (max-width: 860px){
-    display: block;
-  }
+  display: flex;  
+  justify-content: center;
+  flex-direction: row;
 }
 
 .featured {
-  display:flex;
+  padding: 1rem;
+  margin-top:10vh;
+  display: flex;  
+  justify-content: center;
   flex-direction: column;
-  justify-content:flex-start;
-  align-content: flex-start;
-  align-items: flex-start;
+}
 
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 15%);
-  box-shadow: 0 1px 2px 0 rgba( 0, 0, 0, 0.15);
-  background-color: transparent;
+.title {
+  margin-left: 10rem; 
+}
 
-  margin-left: var(--regular-space);
-  margin-top: var(--double-space);
-  padding: var(--regular-space);
+.dashed {
+  border-bottom: 10px solid var(--baby-blue);
+  border-left: 10px solid var(--baby-blue);
+}
+
+section.text {
+  position: absolute;
   width: 100%;
-  transition: all 0.5s ease-in-out;
-
-  @media only screen and (max-width: 860px) {
-    margin: var(--double-space) var(--double-space) var(--double-space) 0;
-    padding: var(--double-space);
-    width: 100%;
-  }
+  min-width: 800px;
+  text-align: center;
+  top: 50%;
+  margin-top: -55px;
 }
 
-.featured {
-  border: 1px solid var(--purple);
-
-  p {
-    text-align: left;
-    color:  var(--white-text);
-  }
-
-  a {
-    color:  var(--dark-blue);
-  }
-
-  li {
-    width: 100%;
-  }
-
+h1, h3 {
+  transform: matrix(1, -0.20, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.20, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, -0.20, 0, 1, 0, 0);
 }
 
-details {
-  margin-left: 1rem;
+h1 {
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 70px;
+  text-shadow: 4px 5px #e6e6d8, 6px 7px #c6a39a;
+  color: var(--baby-blue);
+}
+
+h1 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+span.star {
+  font-size: 20px;
+}
+
+h3 {
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin: 0 0 0 1rem; 
+  position: relative;
+  color: var(--baby-blue);
+}
+
+h3:before, h3:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  border-top: 2px solid var(--baby-blue);
+  border-bottom: 2px solid var(--baby-blue);
+}
+
+h3:before {
+  margin: 5px 0 0 -110px;
+}
+
+h3:after {
+  margin: 5px 0 0 10px;
+}
+
+// ---------------------------------------------------------------------- //
+
+main {
+  padding: 1em;
+  margin-top: 20vh; 
+}
+
+.table-wrapper {
+  overflow: auto;
+	max-width: 100%;
+	background:
+		linear-gradient(to right, white 30%, rgba(255,255,255,0)),
+		linear-gradient(to right, rgba(255,255,255,0), white 70%) 0 100%,
+		radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)),
+		radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+  background-position: 0 0, 100%, 0 0, 100%;
+	background-attachment: local, local, scroll, scroll;
+}
+
+tr {
+  border-bottom: 1px solid;
+}
+
+th {
+  background-color: var(--baby-blue);
+  color: #fff;
+  white-space: nowrap;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5em 1em;
+}
+
+.numeric {
+  text-align: right;
+}
+
+p {
+  text-align: right;
+  margin-top: 1em;
+  font-style: italic;
 }

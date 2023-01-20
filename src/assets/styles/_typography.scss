@@ -2,114 +2,135 @@
 .mat-h1,
 .mat-headline,
 .mat-typography h1 {
-  font-family: var(--font-family-serif1);
+  font-family:  var(--font-family-serif1);
   font-size: 44px;
   font-weight: 600;
-  line-height: 1.5em;
-  padding: 0.5rem;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-  background-color: transparent;
-  border: solid #e1e1e1;
-  border: solid var(--nyh-color-grey-lighter);
-  border-width: 1px 0 0;
-  color: var(--white-text);
-  width: 35vw;
-  text-align: center;
-  transition: all 0.5s ease-in-out;
+  line-height: 1.25em;
+  padding-top: 16px;
+  margin-bottom: 24px;
+  margin-left: 6rem;
 
   @media only screen and (max-width: 500px) {
     font-size: 28px;
-    width: 50vw;
+  }
+}
+
+.pinkglow {
+  font-family: 'Parisienne', cursive;
+  color: var(--bright-pink);
+  font-size: 3rem;
+  display: block;
+  width: 100%;
+  text-shadow: 1px 2px 2px #fff; /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=#ffffff,Strength=1); /* IE<10 */
+  /* Safari */
+  -webkit-transform: rotate(-9deg);
+  /* Firefox */
+  -moz-transform: rotate(-9deg);
+  /* IE */
+  -ms-transform: rotate(-9deg);
+  /* Opera */
+  -o-transform: rotate(-9deg);
+  /* Standard */
+  transform: rotate(-9deg);
+  bottom: 40%;
+  position: relative;
+}
+
+.yellowglow {
+
+  font-family: "Parisienne", cursive;
+  color: var(--yellow);
+  font-size: 1.5rem;
+  text-align: right;
+  top: 3vw;
+  position: relative;
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px var(--bright-pink); /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=#FD0137,Strength=1); /* IE<10 */
+}
+
+.purpleglow {
+  font-family: 'Parisienne', cursive;
+  color:  var(--dark-purple);
+  font-size: 3rem;
+
+  display: block;
+  text-align: left;
+  width: 100%;
+  text-shadow: 1px 1px 1px var(--white-text); /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=#FD0137,Strength=1); /* IE<10 */
+
+  span {
+    font-weight: bold;
   }
 }
 
 h1.yellow {
-  font-family: var(--font-family-serif1);
+  font-family: 'Press Start 2P', cursive;
   color: var(--bright-yellow);
-  width: 100%;
+  padding: 0.5rem;
   text-align: center;
+  margin-bottom: 0.6rem;
 }
 
 h1.bright {
-  font-family: var(--font-family-serif1);
+  font-family:  var(--font-family-serif1);
   color: var(--white-text);
-  background-color: var(--dark-moss-green);
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  text-align: left;
   margin: 0;
-  position: relative;
-  top: -3rem;
-  left: 3rem;
-  transition: all 0.5s ease-in-out;
-
-  @media only screen and (max-width: 500px) {
-    margin: 0;
-    width: 100%;
-    left: 0rem;
-  }
 }
 
 h1.dark-purple {
-  font-family: var(--font-family-serif1);
-  color: var(--white-text);
+  font-family:  var(--font-family-serif1);
+  color:  var(--white-text);
   padding: 0.5rem;
-  margin: 0;
+  margin:0;
+  text-align: center;
 
-  &::after {
+  &::after{
     color: var(--bright-yellow);
   }
 }
 
-h1.purple {
-  font-family: var(--font-family-serif1);
-  background-color: var(--purple);
-  color: var(--white-text);
+h1.orange {
+  font-family:  var(--font-family-serif1);
+  color:  var(--orange);
   padding: 0.5rem;
-  margin: 0 1rem 0 0;
-  transition: all 0.5s ease-in-out;
+  margin:0;
+  text-align: center;
 
-  @media only screen and (max-width: 500px) {
-    margin: 0;
-    width: 100%;
-    right: 0rem;
+  span {
+    color:  var(--white-text);
   }
+
 }
 
 h1.pink {
-  font-family: var(--font-family-serif1);
-  background-color: var(--pink);
-  color: var(--white-text);
+  font-family:  var(--font-family-serif1);
+  color:  var(--pink);
   padding: 0.5rem;
-  margin: 0;
+  margin:0;
   text-align: center;
 
-  transition: all 0.5s ease-in-out;
-
-  @media only screen and (max-width: 500px) {
-    margin: 0;
-    width: 100%;
-    left: 0rem;
+  span {
+    color:  var(--white-text);
   }
-}
 
-.purple,
-.pink {
-  position: relative;
-  top: -3rem;
-  right: -3rem;
 }
 
 /* -------------------------------H2--------------------------- */
 h2 {
-  font-family: var(--font-family-serif2);
-  font-size: 32px;
+  font-family:  var(--font-family-serif2);
+  font-size: 16px;
   margin: 32px 0 8px 0;
   text-align: center;
-  height: 100%;
 }
 
 h2.orange {
-  font-family: var(--font-family-serif2);
-  color: var(--dark-moss-green);
+  font-family:  var(--font-family-serif2);
+  color:  var(--orange);
   opacity: 0.6;
   padding: 0.5rem;
   margin: 0;
@@ -121,8 +142,8 @@ h2.orange {
 }
 /* -------------------------------p--------------------------- */
 p {
-  font-family: var(--font-family-serif1);
-  font-size: 18px;
+  font-family:  var(--font-family-serif1);
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.4545454545em;
   color: var(--black-text);
@@ -139,10 +160,10 @@ ul.narrow {
   align-content: center;
   margin-top: 8px;
   padding: 0;
-  transition: all 0.5s ease-in-out;
+  width: 50%;
 
   li {
-    width: 8rem;
+    width:8rem;
   }
 
   @media only screen and (max-width: 500px) {
@@ -157,12 +178,12 @@ ul.wide {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  margin: 4rem 0 4rem 0;
+  margin-top: 8px;
   padding: 0;
-  transition: all 0.5s ease-in-out;
+  width: 100%;
 
   li {
-    width: 100%;
+    width:100%;
 
     p {
       margin: 0;
@@ -176,10 +197,11 @@ ul.wide {
 /* -------------------------------li--------------------------- */
 li {
   margin: 0 1rem 1rem 0;
-  width: 8rem;
-  transition: all 0.5s ease-in-out;
+  width:8rem;
+  transition: all 0.1s ease-in-out;
 
   &:hover {
+
     a {
       color: var(--bright-pink);
       transition: all 0.1s ease-in-out;
@@ -189,6 +211,7 @@ li {
       fill: var(--bright-pink);
       transition: all 0.1s ease-in-out;
     }
+
   }
 
   a {
@@ -200,56 +223,12 @@ li {
   }
 }
 /* -------------------------------a--------------------------- */
+
 a {
-  font-family: var(--font-family-serif2);
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  color: var(--white-text);
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.1s ease-in-out;
-
-  &:hover,
-  &:focus {
-    text-decoration: line-through;
-  }
-}
-
-a.strike {
-  color: var(--bright-pink);
-  padding: 0.25rem;
-  transition: all 0.1s ease-in-out;
-
-  &:hover,
-  &:focus {
-    text-decoration: line-through;
-  }
-}
-
-a.strike.brown-link {
-  color: var(--moss-green);
-}
-
-a.strike.yellow-link {
-  color: var(--bright-yellow);
-}
-
-a.orange {
-  text-decoration: none;
-  transition: all 0.1s ease-in-out;
-
-  p {
-    color: var(--white-text);
-  }
-
-  &:hover {
-    p {
-      text-decoration: none;
-      color: var(--moss-green);
-    }
-  }
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+-ms-hyphens: auto;
+hyphens: auto;
 }
 
 /* -------------------------------span--------------------------- */
@@ -293,9 +272,4 @@ svg {
     fill: var(--bright-pink);
     transition: all 0.1s ease-in-out;
   }
-}
-
-b {
-  font-weight: 700;
-  font-family: var(--font-family-serif1);
 }

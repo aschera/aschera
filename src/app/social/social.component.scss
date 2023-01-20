@@ -3,44 +3,144 @@
 
 .social {
   display: flex;
-  justify-content: space-between;
-  padding: var(--double-space);
-
-  @media only screen and (max-width: 860px){
-    display: block;
-  }
-}
-
-.follow-me,
-.featured-text  {
-  display:flex;
   flex-direction: column;
-  justify-content:flex-start;
-  align-content: flex-end;
-  align-items: flex-end;
-  box-shadow: 0 1px 2px 0 rgba( 0, 0, 0, 0.15);
-  background-color: transparent;
-  margin-top: var(--double-space);
-  padding: var(--regular-space);
-  width: 40%;
-  transition: all 0.5s ease-in-out;
+  justify-content: flex-start;
+  padding: 1rem 1rem 1rem 0;
+}
 
-  @media only screen and (max-width: 860px) {
-    margin: var(--double-space) var(--double-space) var(--double-space) 0;
-    padding: var(--double-space);
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 1rem;
+}
+
+.image-block  {
+  width:20vw;
+}
+
+.dashed {
+  border-bottom: 10px solid var(--pink);
+  border-left: 10px solid var(--pink);
+}
+
+.content-text {
+  width:70vw;
+}
+
+.featured-text p{
+  color:var(--white-text);
+  padding: 0 1rem;
+}
+
+.content-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30vw;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 1rem;
+  margin: 0;
+
+  li {
+    width:45%;
+  }
+}
+
+.image-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0.2rem;
+
+  img {
+    height: 40vh
+    //width:100%;
+  }
+  }
+
+  h2 {
+    font-family: "Parisienne", cursive;
+    color: var(--pink);
+    font-size: 2rem;
+    padding: 0 1rem;
+    display: block;
+    text-align: left;
     width: 100%;
+    text-shadow: 1px 1px 1px var(--white-text);
+  }
+
+  h3 {
+    font-size:14px;
+    font-family:  var(--font-family-serif1);
+    color: var(--bright-yellow);
+    
+    margin: 0;
+  }
+
+/* Masonry grid */
+.masonry {
+  transition: all .5s ease-in-out;
+  column-gap: 6px;
+  padding: 6px 6px 6px 0;
+  column-fill: initial;
+  margin-top: var(--double-space);
+  max-width: 50%;
+  background-color: var(--bright-yellow);
+  column-count: 2;
+  max-width: 40%;
+}
+
+/* Masonry item */
+.masonry .brick {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 6px;
+  vertical-align: top; /* Keep the item on the very top */
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+
+/* Masonry image effects */
+.masonry .brick img {
+  transition: all .5s ease-in-out;
+  backface-visibility: hidden; /* Remove Image flickering on hover */
+}
+
+.masonry .brick:hover img {
+  opacity: .75;
+}
+
+/* Gutterless masonry */
+.masonry.gutterless {
+  column-gap: 0;
+}
+
+.masonry.gutterless .brick {
+  margin-bottom: 0;
+}
+
+/* Masonry on tablets */
+@media only screen and (max-width: 865px){
+  .masonry {
+    column-count: 3;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 6px;
+
+    .brick img {
+      width: 100%;
+      height:auto;
+    }
   }
 }
 
-.follow-me {
-  border: 1px solid var(--pink);
-}
-
-.featured-text {
-  border: 1px solid var(--purple);
-
-  p {
-    color:  var(--white-text);
-  }
-
-}

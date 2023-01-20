@@ -89,7 +89,6 @@ select {
 }
 
 html, body {
-  font-family: var(--font-family-serif1);
   background-color: transparent;
   background: transparent;
   max-width:100%;
@@ -100,20 +99,20 @@ html, body {
 
 body {
   --font-size: $regular-space;
-  font-family: var(--font-family-serif1);
-      font-size: var(--font-size);
-      line-height: calc( var(--font-size) * 1.5);
-      line-height: 1.5em;
-      letter-spacing: 0.12em;
-      word-spacing: 0.16em;
-      padding: var(--double-space) 0;
+  font-size: var(--font-size);
+  line-height: calc( var(--font-size) * 1.5);
+  padding: 0;
 
   background-color: var(--black-text);
   background: var(--black-text);
+
+      @media only screen and (max-width: 500px) {
+        padding: $regular-space;
+      }
+
   }
 
   p {
-    font-family: var(--font-family-serif2);
     margin-bottom: 2em;
    }
 

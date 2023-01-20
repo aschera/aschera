@@ -10,7 +10,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-top: var(--double-space);
-  padding: var(--double-space) 6.395348837% var(--double-space);
+  padding: 1rem;
 
   p {
     color: var(--white-text);
@@ -29,13 +29,3 @@ footer, footer .tagline, footer p  {
     text-align: center;
   }
 }
-
-.divider {
-  height: 30rem;
-
-  &.small {
-    height: 1rem;
-  }
-}
-
-
