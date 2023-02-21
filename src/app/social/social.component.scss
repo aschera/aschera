@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1rem 1rem 1rem 0;
+  padding: 0;
 }
 
 .content {
@@ -13,7 +13,7 @@
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
-  padding: 1rem;
+  padding: 0;
 }
 
 .image-block  {
@@ -29,12 +29,22 @@
   width:70vw;
 }
 
-.featured-text p{
+.featured-text {
+  width: 100%;
+}
+
+p {
+  color: white;
+  padding:1rem;
+  font-family: "Cousine", Menlo, Monaco, Consolas, "Lucida Console", monospace;
+}
+
+.featured-text p {
   color:var(--white-text);
   padding: 0 1rem;
 }
 
-.content-text{
+.content-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,7 +60,7 @@
   margin: 0;
 
   li {
-    width:45%;
+    width: 25%;
   }
 }
 
@@ -59,11 +69,20 @@
   flex-direction: row;
   justify-content: flex-start;
   padding: 0.2rem;
-
-  img {
-    height: 40vh
-    //width:100%;
+  margin-bottom: -0.2rem;
+  height: 100%;
+  min-width: 30vw;
   }
+
+
+
+
+  .image_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
   }
 
   h2 {
@@ -71,10 +90,12 @@
     color: var(--pink);
     font-size: 2rem;
     padding: 0 1rem;
-    display: block;
-    text-align: left;
-    width: 100%;
+    margin-bottom: 2em;
     text-shadow: 1px 1px 1px var(--white-text);
+  }
+
+  .featured-text {
+
   }
 
   h3 {
