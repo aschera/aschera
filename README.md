@@ -1,13 +1,21 @@
 # Hello
 
-This is my portfolio.
+This is the Christinas github profile with lots of different repositories.
+<br>
+
+This is my portfolio repository:
+<br>
+https://github.com/aschera/aschera
+<br><br>
+
+I'm currently updating the website view. So the public URL has only the old version.
+<br>
 
 ## public url
 
 http://www.aschera.me
 
-I'm currently updating the website view.
-The new version is not yet available.
+
 
 ----------------------------------------------------
 
