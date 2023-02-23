@@ -1,6 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Open+Sans:700);
-
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+
+/* Recent colors: */
+
+/* 
+
+*/
+
+
+
+
+/* --------- xxx --------------------- */
+
 
 /* fontawesome */
 [class*="fontawesome-"]:before {
@@ -26,6 +38,7 @@
 }
 
 .dashed {
+  border-top: 10px solid var(--baby-blue);
   border-bottom: 10px solid var(--baby-blue);
   border-left: 10px solid var(--baby-blue);
 }

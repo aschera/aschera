@@ -1,3 +1,6 @@
+/* Social colors: */
+
+/* border and links: var(--pink)  // #C648C6;*/
 
 /* --------- section wrapper --------------------- */
 
@@ -11,6 +14,7 @@
 .dashed {
   border-bottom: 10px solid var(--pink);
   border-left: 10px solid var(--pink);
+  border-top: 10px solid var(--pink);
 }
 
 
@@ -22,16 +26,14 @@
   justify-content: flex-start;
   width: 100%;
   padding: 0;
-
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row;
   height: 500px;
-  background-color: #141413;
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  background-color: #000000;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
 }
 
 /* --------- image --------------------- */
@@ -70,16 +72,12 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: center;
     justify-content: center;
-    margin: auto 30px auto 0;
     text-align: center;
+    width: 40%;
+    margin-left: 5rem;
 }
 
 .heading-wrapper {
@@ -92,7 +90,7 @@ header {
     align-content: center;
 
     .label {
-      color: white;
+      color: #FFFFFF;
     }
 
     h3 {
@@ -102,7 +100,7 @@ header {
       line-height: 54px;
       letter-spacing: normal;
       width: 100%;
-      color: white;
+      color: #FFFFFF;
       margin: 15px 0 18.75px;
     }
   }
@@ -110,10 +108,22 @@ header {
 }
 
 .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
   p {
-    color: white;
-    padding:1rem;
     font-family: "Cousine", Menlo, Monaco, Consolas, "Lucida Console", monospace;
+    color: #FFFFFF;
+    line-height: 22px;
+    letter-spacing: normal;
+    margin-bottom: 18.75px;
+    font-style: normal;
+    font-weight: 400;
+    width: 500px;
+    text-align: center;
   }
 }
 
@@ -126,10 +136,74 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 1rem;
-  margin: 0;
+  margin: 5rem 0 0 0;
 
   li {
     width: 25%;
+  }
+}
+
+a.social-link {
+  $linkcolor-hover: #FFFFFF;
+  $linkcolor: #C648C6;
+
+  font-family: "Parisienne", cursive;
+  color: $linkcolor;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px var(--bright-pink); /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=#FD0137,Strength=1); /* IE<10 */
+
+  &:hover {
+    color: $linkcolor-hover;
+    transition: all 0.1s ease-in-out;
+    
+    svg {
+      fill: $linkcolor-hover;
+      transition: all 0.1s ease-in-out;
+    }
+
+  }
+
+  svg {
+    fill: $linkcolor;
+  }
+}
+
+/* --------- mobile view --------------------- */
+@media only screen and (max-width: 1150px) {
+  .social {
+    background-color: #000000;
+  }
+  .content {
+    flex-direction: column-reverse;
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+  .main-content-wrapper { 
+      width:100%;
+      margin:0;
+      padding: 0 1rem;
+  }
+  header {
+
+    .image-block {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      min-width: 30vw;
+
+      img {
+        position: relative;
+        right: auto;
+        height: auto;
+        margin: 0;
+        bottom: auto;
+        display: inline-block;
+        width: auto;
+        max-height: 40vh;
+      }
+      }
+  
   }
 }
 

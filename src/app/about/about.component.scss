@@ -1,12 +1,21 @@
+/* About colors: */
 
-/* ------------------------------ */
+/* 
+border: #ffecb2;
+heading: #01257b;
+*/
+
+
+
+
+/* --------- img --------------------- */
 img {
   height: 100%;
   width:100%;
 }
 
+/* --------- text --------------------- */
 p {
-  color:white;
   font-family: 'Cousine', Menlo, Monaco, Consolas, 'Lucida Console', monospace;
 }
 
@@ -14,9 +23,10 @@ h3 {
   text-align: left;
   padding: 1rem 1rem 1rem 0;
   font-family: 'Press Start 2P', cursive;
-  color: var(--bright-yellow);
+  color: #01257b;
 }
 
+/* --------- wrappers --------------------- */
 section {
   padding: 5rem 0;
 }
@@ -28,17 +38,37 @@ section {
   justify-content: center;
   flex-direction: row;
   padding: 0 1rem;
-  background-color: #141413;
 }
 
+.text-wrapper {
+  width: 30%;
+  margin-left: 6%;
+}
+
+/* --------- border --------------------- */
 .dashed {
   border-top: 10px solid #ffecb2;
   border-left: 10px solid #ffecb2;
 }
 
-@media only screen and (min-width: 960px) {
-  .span3 {
-    width: 29.41176470588235%;
-    margin-left: 5.882352941176471%;
+/* --------- mobile view --------------------- */
+@media only screen and (max-width: 1150px) {
+  .row {
+    flex-direction: column;
+  }
+  .text-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+  .text-wrapper.image {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: auto;
+    max-height:40vh;
+  }
+  .dashed {
+    border-bottom: 6px solid #ffecb2;
   }
 }

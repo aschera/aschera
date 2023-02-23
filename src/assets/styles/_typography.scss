@@ -38,7 +38,6 @@
 }
 
 .yellowglow {
-
   font-family: "Parisienne", cursive;
   color: var(--yellow);
   font-size: 1.5rem;
@@ -151,6 +150,34 @@ p {
   line-height: 1.5em;
   flex-shrink: 0;
 }
+
+/* -------------------------------a--------------------------- */
+
+a {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  }
+
+/* --------------------------------svg-------------------------- */
+svg {
+  flex-shrink: 0;
+
+  margin-right: 6px;
+  width: 32px;
+
+  #youtube-color {
+    &:hover {
+      transition: all 0.1s ease-in-out;
+    }
+  }
+
+  &:hover {
+    transition: all 0.1s ease-in-out;
+  }
+}
+
 /* -------------------------------ul--------------------------- */
 ul.narrow {
   display: flex;
@@ -200,38 +227,15 @@ li {
   width:8rem;
   transition: all 0.1s ease-in-out;
 
-  &:hover {
-
-    a {
-      color: var(--bright-pink);
-      transition: all 0.1s ease-in-out;
-    }
-
-    svg {
-      fill: var(--bright-pink);
-      transition: all 0.1s ease-in-out;
-    }
-
-  }
-
   a {
-    font-family: "Press Start 2P", cursive;
-    font-size: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    color: var(--pink);
   }
 }
-/* -------------------------------a--------------------------- */
 
-a {
--webkit-hyphens: auto;
--moz-hyphens: auto;
--ms-hyphens: auto;
-hyphens: auto;
-}
+
 
 /* -------------------------------span--------------------------- */
 span.yellow {
@@ -255,23 +259,4 @@ span.yellow {
 img {
   max-width: 100%;
 }
-/* --------------------------------svg-------------------------- */
-svg {
-  flex-shrink: 0;
-  fill: var(--pink);
-  margin-right: 6px;
-  width: 32px;
 
-  #youtube-color {
-    fill: var(--pink);
-    &:hover {
-      fill: var(--bright-pink);
-      transition: all 0.1s ease-in-out;
-    }
-  }
-
-  &:hover {
-    fill: var(--bright-pink);
-    transition: all 0.1s ease-in-out;
-  }
-}
