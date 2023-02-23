@@ -2,12 +2,19 @@
 
 This is my portfolio.
 
-# start dev server locally
+## public url
+
+http://www.aschera.me
+
+I'm currently updating the website view.
+The new version is not yet available.
+
+----------------------------------------------------
+
+### How to start dev server locally
 
 ng serve
 
 find the page on: http://localhost:4200/
 
-# public url
 
-http://www.aschera.me
