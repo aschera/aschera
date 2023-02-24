@@ -19,13 +19,13 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="{{ item.class }}" *ngFor='let item of jsonObj.table.beer_api'>
-                <span *ngIf="!item.contenturl; else elseBlock">
-                  {{ item.content }}
+            <tr *ngFor='let item of jsonObj.table.rows'>
+              <td class="{{ row.class }}" *ngFor='let row of item'>
+                <span *ngIf="!row.contenturl; else elseBlock">
+                  {{ row.content }}
                 </span>
                 <ng-template #elseBlock>
-                  <a href='{{item.contenturl}}' target="_blank" class="project-link" title="link to project">link </a>
+                  <a href='{{row.contenturl}}' target="_blank" class="project-link" title="link to project">link </a>
                 </ng-template>
               </td>
             </tr>

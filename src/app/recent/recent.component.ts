@@ -32,18 +32,44 @@ export class RecentComponent implements OnInit {
         { 'class': 'mobile', 'content': 'Link' },
       ],
 
-      'beer_api': [
-        { 'class': 'mobile', 'content': 'Craft Beer API' },
-        { 'class': 'not-mobile', 'content': 'REST API, webscraper, webapp' },
-        { 'class': 'not-mobile', 'content': 'Beer and Breweries' },
-        { 'class': 'mobile', 'content': 'Python' },
-        { 'class': 'not-mobile', 'content': 'Django' },
-        { 'class': 'mobile', 'content': 'sqLite' },
-        { 'class': 'not-mobile', 'content': 'Materialize, Beautifulsoup' },
-        { 'class': 'mobile', 'content': '2023' },
-        { 'class': 'not-mobile', 'content': 'school' },
-        { 'class': 'mobile', 'contenturl': 'https://github.com/aschera/FinalPythonAssignment' },
-      ],
-    },
+      'rows':
+        [          [
+          { 'class': 'mobile', 'content': 'Portfolio App ' },
+          { 'class': 'not-mobile', 'content': 'Angular web app' },
+          { 'class': 'not-mobile', 'content': 'Portfolio page to showcase projects' },
+          { 'class': 'mobile', 'content': 'JavaScript, Sass' },
+          { 'class': 'not-mobile', 'content': 'Angular' },
+          { 'class': 'mobile', 'content': 'none' },
+          { 'class': 'not-mobile', 'content': 'Materialize, Fontawesome' },
+          { 'class': 'mobile', 'content': '2023' },
+          { 'class': 'not-mobile', 'content': 'personal project' },
+          { 'class': 'mobile', 'contenturl': 'https://github.com/aschera/aschera' }
+        ],
+          [
+            { 'class': 'mobile', 'content': 'Craft Beer API ' },
+            { 'class': 'not-mobile', 'content': 'REST API, webscraper, webapp' },
+            { 'class': 'not-mobile', 'content': 'Beer and Breweries' },
+            { 'class': 'mobile', 'content': 'Python' },
+            { 'class': 'not-mobile', 'content': 'Django' },
+            { 'class': 'mobile', 'content': 'sqLite' },
+            { 'class': 'not-mobile', 'content': 'Materialize, Beautifulsoup' },
+            { 'class': 'mobile', 'content': '2023' },
+            { 'class': 'not-mobile', 'content': 'school project' },
+            { 'class': 'mobile', 'contenturl': 'https://github.com/aschera/FinalPythonAssignment' }
+          ],
+          [
+            { 'class': 'mobile', 'content': 'Movie Database' },
+            { 'class': 'not-mobile', 'content': 'Sort and display content from an API' },
+            { 'class': 'not-mobile', 'content': 'Star Wars movies' },
+            { 'class': 'mobile', 'content': 'JavaScript, Less' },
+            { 'class': 'not-mobile', 'content': 'React' },
+            { 'class': 'mobile', 'content': 'none' },
+            { 'class': 'not-mobile', 'content': 'Fontawesome' },
+            { 'class': 'mobile', 'content': '2022' },
+            { 'class': 'not-mobile', 'content': 'job application' },
+            { 'class': 'mobile', 'contenturl': 'https://a-long-time-ago.netlify.app/' },
+          ]
+        ]
+    }
   }
 }
