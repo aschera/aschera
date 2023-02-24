@@ -42,7 +42,7 @@ export class RecentComponent implements OnInit {
         { 'class': 'not-mobile', 'content': 'Materialize, Beautifulsoup' },
         { 'class': 'mobile', 'content': '2023' },
         { 'class': 'not-mobile', 'content': 'school' },
-        { 'class': 'mobile', 'content': 'URL' },
+        { 'class': 'mobile', 'contenturl': 'https://github.com/aschera/FinalPythonAssignment' },
       ],
     },
   }
