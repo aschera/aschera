@@ -9,6 +9,12 @@
   flex-direction: column;
   justify-content: flex-start;
   padding: 0;
+  min-width: 480px;
+}
+
+section {
+  padding: 5rem 0;
+  margin-bottom: 10rem;
 }
 
 .dashed {
@@ -147,7 +153,9 @@ a.social-link {
   $linkcolor-hover: #FFFFFF;
   $linkcolor: #C648C6;
 
-  font-family: "Parisienne", cursive;
+  font-family: "Oswald", Sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
   color: $linkcolor;
   font-size: 1rem;
   text-shadow: 1px 1px 1px var(--bright-pink); /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */

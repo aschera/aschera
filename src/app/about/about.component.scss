@@ -29,6 +29,7 @@ h3 {
 /* --------- wrappers --------------------- */
 section {
   padding: 5rem 0;
+  margin-bottom: 10rem;
 }
 
 .row {
@@ -49,6 +50,7 @@ section {
 .dashed {
   border-top: 10px solid #ffecb2;
   border-left: 10px solid #ffecb2;
+  border-bottom: 10px solid #ffecb2;
 }
 
 /* --------- mobile view --------------------- */
@@ -67,8 +69,5 @@ section {
   img {
     width: auto;
     max-height:40vh;
-  }
-  .dashed {
-    border-bottom: 6px solid #ffecb2;
   }
 }

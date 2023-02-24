@@ -11,11 +11,22 @@ menu, link: #f414d4;
 
 /* --------- wrapper --------------------- */
 
+.home {
+  min-width: 480px;
+}
+
 .start {
+  background-image: url('../../assets/images/background-desktop.png');
+
   height: 100vh;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 5rem;
+}
+
+section {
+  padding: 0;
   margin-bottom: 5rem;
 }
 
@@ -44,12 +55,13 @@ ul {
   justify-content: center;
   align-items: center;
   align-content: center;
+  min-width: 290px;
 }
 
 li {
   text-align: center;
-  padding: 0.625em 0.3125em;
-  margin: 0.3125em 0.125em 0;
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,10 +74,12 @@ li {
 .menu {
   top: 0;
   position: fixed;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
+
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #f414d4;
@@ -73,14 +87,38 @@ li {
   z-index: 9999;
 }
 
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  margin: 1em;
+  padding-left: 40px;
+}
+
+h1 {
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h1, .sun {
+  padding: 0 1rem;
+  font-size: 20px;
+  color: var(--baby-blue);
+}
+
 /* --------- links--------------------- */
 a.main-menu-link {
   $linkcolor-hover: #000000;
   $linkcolor: #f414d4;
 
-  font-family: "Parisienne", cursive;
+  font-family: "Oswald", Sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
   color: $linkcolor;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-shadow: 1px 1px 1px #f414d4; /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
   filter: progid:DXImageTransform.Microsoft.Glow(Color=#f414d4,Strength=1); /* IE<10 */
 
@@ -92,7 +130,6 @@ a.main-menu-link {
       fill: $linkcolor-hover;
       transition: all 0.1s ease-in-out;
     }
-
   }
 
   svg {
@@ -104,22 +141,37 @@ a.main-menu-link {
 
 @media only screen and (max-width: 865px){
   .start {
-    padding: var(--double-space);
-    height: 50vh;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url('../../assets/images/background_mobile.png');
+    border: none;
+    background-size: cover;
+    margin-bottom: 5rem;
   }
   .menu {
     left: 0;
+    padding: 0 0.3rem;
+  }
+  section {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    padding:0;
+  }
+  .heading {
+    margin:0;
+    padding: 0;
+  }
+  h1 {
+    display: none;
+  }
+  ul {justify-content: flex-end; width:60vw; height: 5vh; margin-left: 1rem;}
+  ul, li {padding:0; margin:0; width:25%}
+  ul li a {
+    font-family: "Oswald", Sans-serif;
+    font-size: 1rem;   
+    text-shadow: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .start {
-      border:10px solid #fff
-  }
-
   .start .cont {
       top: 30vh
   }
