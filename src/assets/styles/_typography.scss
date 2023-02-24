@@ -65,6 +65,12 @@
   }
 }
 
+h1 {
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 h1.yellow {
   font-family: 'Press Start 2P', cursive;
   color: var(--bright-yellow);
@@ -139,6 +145,18 @@ h2.orange {
   right: -170px;
   display: inline-block;
 }
+
+/* -------------------------------H2--------------------------- */
+
+h3 {
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 0 0 1rem;
+  position: relative;
+}
+
 /* -------------------------------p--------------------------- */
 p {
   font-family:  var(--font-family-serif1);

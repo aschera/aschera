@@ -97,12 +97,6 @@ li {
   padding-left: 40px;
 }
 
-h1 {
-  font-family: "Oswald", Sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
 h1, .sun {
   padding: 0 1rem;
   font-size: 20px;
@@ -180,20 +174,3 @@ a.main-menu-link {
       font-size: 16px
   }
 }
-
-// ---------------------------------------------------------------- //
-
-.waitingForConnection {
-  animation: blinker 3.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
-}
-@keyframes blinker { to { opacity: 0; } }
-
-.waitingForConnection2 {
-  animation: blinker2 5.6s cubic-bezier(1, 0, 0, 1) infinite alternate;  
-}
-@keyframes blinker2 { to { opacity: 0; } }
-
-.waitingForConnection3 {
-  animation: blinker3 7s ease-in-out infinite alternate;  
-}
-@keyframes blinker3 { to { opacity: 0; } }

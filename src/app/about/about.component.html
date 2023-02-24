@@ -1,50 +1,38 @@
 <section id="about" class="dashed ">
   <div class="row">
     <div class="text-wrapper">
-      <h3>I'm a data scientist</h3>
+      <h3>{{jsonObj.scienceHeading}}</h3>
       <p>
-        Hi, my name is Christina and I currently study to become a data scientist. <br />
-        I'm based in Gothenburg, Sweden. <br /><br />
-        I hold a Bachelor’s degree in Computer Science (University of the People).
+        <span *ngFor='let item of jsonObj.science'>
+          {{ item }} 
+        </span>
+        <br>
       </p>
-      <h3>My passion</h3>
+      <h3>{{jsonObj.passionHeading}}</h3>
       <p>
-        Ever since I was a child, I have had a passion for problem-solving and improving the world around me.
-        <br /><br />
-        This mindset carries over to my approach to analyzing large data sets and understanding every aspect of the
-        world -
-        constantly questioning how it can be improved,
-        how it operates, and why.
-        <br /><br />
-        The thrill of discovering solutions to complex issues and uncovering patterns that
-        have gone unnoticed by others is what drives me.
+        <span *ngFor='let item of jsonObj.passion'>
+          {{ item }} 
+        </span>
+        <br>
       </p>
     </div>
     <div class="text-wrapper image">
       <img src="../assets/images/me.jpg">
     </div>
     <div class="text-wrapper">
-      <h3>I'm also a front end developer</h3>
+      <h3>{{jsonObj.frontHeading}}</h3>
       <p>
-        Throughout my career, I have amassed over four years of experience as a front-end developer. <br /><br />
-        I'm
-        specialized in doing websolutions for low-code technology, marketing, and e-commerce.
-        <br /><br />
-        My strong understanding of user experience, accessibility,
-        and programming has enabled me to excel in my current role as a data scientist, as I am able to bridge the gap
-        between
-        users and analysts.
+        <span *ngFor='let item of jsonObj.front'>
+          {{ item }} 
+        </span>
+        <br>
       </p>
-      <h3>My life</h3>
+      <h3>{{jsonObj.hobbiesHeading}}</h3>
       <p>
-        Wallclimbing, hiking, canoeing / <br />
-        Puzzle & board games / <br />
-        Simulation computer games /<br />
-        Reading and writing books and articles /<br />
-        Drawing, sketching and painting /<br />
-        Cooking and baking /<br />
-        Learning new skills /<br />
-        Designing and development of my website.<br />
+        <span *ngFor='let item of jsonObj.hobbies'>
+          {{ item }} 
+        </span>
+        <br>
       </p>
     </div>
   </div>

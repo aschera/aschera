@@ -1,4 +1,5 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-about',
@@ -7,12 +8,50 @@ import { Component} from '@angular/core';
 })
 export class AboutComponent {
 
-  htmlStr1: string = 'I’m an <b>data science student</b> who has been creating engaging web experiences for several years as a front-end developer. Now, I am focused on utilizing data to generate valuable insights and drive business decisions.';
-  
-  htmlStr2: string = 'I’m currently studying for a <b>B.A. in Computer Science</b> <br> at the <a class="strike yellow-link" href=" https://www.uopeople.edu/" target="_blank">University of the People</a> , and am in my last year of study. <br> As a student, I’ve completed a variety of computer science courses, which you can view in my portfolio <a class="strike yellow-link" href="../../assets/images/courses.png" target="_blank">here.</a>';
+  jsonObj = {
 
-  htmlStr4: string = 'In addition, I am pursuing a <b>vocational degree in Data science</b>  at <a class="strike yellow-link" href="" target="_blank">EC Utbildning </a> where I have completed courses in business analytics, R, statistics and SQL. <br>';
-  
-  htmlStr3: string = 'In my free time, I enjoy continuing my education through online platforms like Pluralsight, Udemy, EdX, and Coursera. ';
+    'scienceHeading': 'Data, Computers and Science',
 
+    'science': [
+      'Hi, my name is Christina.',
+      "I’m based in Gothenburg, Sweden.",
+      'I currently study to become a data scientist.',
+      'The plan is that I will finish during the spring of 2024.',
+      'I also hold a Bachelor’s degree in Computer Science (University of the People)',
+      'My goal is to work with advanced data technologies and provide visualization of the data that help people make better decisions.'
+    ],
+
+    'passionHeading': 'Passion and Grit',
+
+    'passion': [
+      'I’m a knowledge seeker.',
+      'Ever since I was a child, I have had a passion for problem-solving and improving the world around me.',
+      'This mindset carries over to my approach to analyzing large data sets and understanding every aspect of the world.',
+      'Constantly questioning how it can be improved, how it operates, and why.',
+      'The thrill of discovering solutions to complex issues and uncovering patterns that have gone unnoticed by others is what drives me.'
+    ],
+
+    'frontHeading': 'Front End and web',
+
+    'front': [
+      'Throughout my career, I have amassed over four years of experience as a front-end developer.',
+      'I’m specialized in doing websolutions for low-code technology, marketing, and e-commerce.',
+      'My strong understanding of user experience, accessibility, and programming has enabled me to excel in my current role as a data scientist.',
+      ' I am able to bridge the gap between users and analysts.'
+    ],
+
+    'hobbiesHeading': 'Life and Hobbies',
+
+    'hobbies': [
+      'Wallclimbing, hiking, canoeing',
+      'Puzzle & board games',
+      'Simulation computer games',
+      'Reading and writing books and articles',
+      'Drawing, sketching and painting',
+      'Cooking and baking',
+      'Learning new skills',
+      'Designing and development of my website'
+    ],
+
+  }
 }

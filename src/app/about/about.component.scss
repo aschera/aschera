@@ -17,13 +17,20 @@ img {
 /* --------- text --------------------- */
 p {
   font-family: 'Cousine', Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+  span {
+    display: inline-block;
+  }
 }
 
 h3 {
   text-align: left;
   padding: 1rem 1rem 1rem 0;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Cousine', Menlo, Monaco, Consolas, 'Lucida Console', monospace;
   color: #01257b;
+}
+
+h3::first-letter {
+  font-size:3rem;
 }
 
 /* --------- wrappers --------------------- */

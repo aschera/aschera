@@ -1,0 +1,59 @@
+/* Masonry grid */
+.masonry {
+    transition: all .5s ease-in-out;
+    column-gap: 6px;
+    padding: 6px 6px 6px 0;
+    column-fill: initial;
+    margin-top: var(--double-space);
+    max-width: 50%;
+    background-color: var(--bright-yellow);
+    column-count: 2;
+    max-width: 40%;
+  }
+  
+  /* Masonry item */
+  .masonry .brick {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 6px;
+    vertical-align: top; /* Keep the item on the very top */
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  
+  /* Masonry image effects */
+  .masonry .brick img {
+    transition: all .5s ease-in-out;
+    backface-visibility: hidden; /* Remove Image flickering on hover */
+  }
+  
+  .masonry .brick:hover img {
+    opacity: .75;
+  }
+  
+  /* Gutterless masonry */
+  .masonry.gutterless {
+    column-gap: 0;
+  }
+  
+  .masonry.gutterless .brick {
+    margin-bottom: 0;
+  }
+  
+  /* Masonry on tablets */
+  @media only screen and (max-width: 865px){
+    .masonry {
+      column-count: 3;
+      max-width: 100%;
+      margin: 0;
+      padding-left: 6px;
+  
+      .brick img {
+        width: 100%;
+        height:auto;
+      }
+    }
+  }
+ 
