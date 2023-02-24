@@ -3,15 +3,14 @@
     <div class="menu">
       <div class="heading">
         <i class="material-icons sun">sunny</i>
-        <h1> 
-          Christinas Portfolio
-        </h1>
+        <h1> {{jsonObj.title}}</h1>
       </div>
       <ul>
-        <li><a class="main-menu-link" href="#main">HOME</a></li>
-        <li><a class="main-menu-link" href="#about">ABOUT</a></li>
-        <li><a class="main-menu-link" href="#contact">CONTACT</a></li>
-        <li><a class="main-menu-link" href="#work">WORK</a></li>
+        <li *ngFor='let item of jsonObj.menu'>
+          <a class="main-menu-link" href="#{{item}}" title="link to {{item}}">
+            {{item}}
+          </a>
+        </li>
       </ul>
     </div>
   </div>

@@ -5,11 +5,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
+
 export class MainComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
 
+  jsonObj = {
+
+    'title' : 'Christinas Portfolio',
+
+    'menu': [
+      'home',
+      'about',
+      'contact',
+      'work',
+    ],
+
+  }
 }

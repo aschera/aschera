@@ -1,42 +1,28 @@
 <section id="work" class="recent dashed">
   <div class="featured">
     <div class="title">
-    <h3>Here you find my awesome work</h3>
-    <h1>
-      <span class="fontawesome-star star"></span> 
-      <span>Amazing projects and ideas</span> 
-      <span class="fontawesome-star star"></span>
-    </h1>
-  </div>
+      <h3>{{jsonObj.title}}</h3>
+      <h1>
+        <span class="fontawesome-star star"></span>
+        <span>{{jsonObj.subtitle}}</span>
+        <span class="fontawesome-star star"></span>
+      </h1>
+    </div>
     <main>
       <div class="table-wrapper" tabindex="0">
         <table id="project-table">
           <thead>
             <tr>
-              <th>Name</th>
-              <th class="not-mobile">Type</th>
-              <th class="not-mobile">Theme</th>
-              <th>Language</th>
-              <th class="not-mobile">Framework</th>
-              <th>Database</th>
-              <th class="not-mobile">Libraries</th>
-              <th>Year</th>
-              <th class="not-mobile">Project</th>
-              <th>Link</th>
+              <th class="{{ item.class }}" *ngFor='let item of jsonObj.table.columns'>
+                {{ item.content }}
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Craft Beer API</td>
-              <td class="not-mobile">REST API, webscraper, webapp</td>
-              <td class="not-mobile">Beer and Breweries</td>
-              <td>Python</td>
-              <td class="not-mobile">Django</td>
-              <td>sqLite</td>
-              <td class="not-mobile">Materialize, Beautifulsoup</td>
-              <td class="numeric">2023</td>
-              <td class="not-mobile">school</td>
-              <td><a class="project-link" href="https://github.com/aschera/FinalPythonAssignment" target="_blank">URL</a></td>
+              <td class="{{ item.class }}" *ngFor='let item of jsonObj.table.beer_api'>
+                {{ item.content }}
+              </td>
             </tr>
           </tbody>
         </table>
