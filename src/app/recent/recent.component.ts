@@ -33,18 +33,31 @@ export class RecentComponent implements OnInit {
       ],
 
       'rows':
-        [          [
-          { 'class': 'mobile', 'content': 'Portfolio App ' },
-          { 'class': 'not-mobile', 'content': 'Angular web app' },
-          { 'class': 'not-mobile', 'content': 'Portfolio page to showcase projects' },
-          { 'class': 'mobile', 'content': 'JavaScript, Sass' },
-          { 'class': 'not-mobile', 'content': 'Angular' },
-          { 'class': 'mobile', 'content': 'none' },
-          { 'class': 'not-mobile', 'content': 'Materialize, Fontawesome' },
-          { 'class': 'mobile', 'content': '2023' },
-          { 'class': 'not-mobile', 'content': 'personal project' },
-          { 'class': 'mobile', 'contenturl': 'https://github.com/aschera/aschera' }
-        ],
+        [ 
+          [
+            { 'class': 'mobile', 'content': 'MNIST image classification' },
+            { 'class': 'not-mobile', 'content': 'Jupyter Notebook' },
+            { 'class': 'not-mobile', 'content': 'Datamodelling of images' },
+            { 'class': 'mobile', 'content': 'Python' },
+            { 'class': 'not-mobile', 'content': 'Scikitlearn' },
+            { 'class': 'mobile', 'content': 'none' },
+            { 'class': 'not-mobile', 'content': 'a lot different python stuff.' },
+            { 'class': 'mobile', 'content': '2023' },
+            { 'class': 'not-mobile', 'content': 'school project' },
+            { 'class': 'mobile', 'contenturl': 'https://github.com/aschera/mnist_exploration' }
+          ],
+          [
+            { 'class': 'mobile', 'content': 'Portfolio App ' },
+            { 'class': 'not-mobile', 'content': 'Angular web app' },
+            { 'class': 'not-mobile', 'content': 'Portfolio page to showcase projects' },
+            { 'class': 'mobile', 'content': 'JavaScript, Sass' },
+            { 'class': 'not-mobile', 'content': 'Angular' },
+            { 'class': 'mobile', 'content': 'none' },
+            { 'class': 'not-mobile', 'content': 'Materialize, Fontawesome' },
+            { 'class': 'mobile', 'content': '2023' },
+            { 'class': 'not-mobile', 'content': 'personal project' },
+            { 'class': 'mobile', 'contenturl': 'https://github.com/aschera/aschera' }
+          ],
           [
             { 'class': 'mobile', 'content': 'Craft Beer API ' },
             { 'class': 'not-mobile', 'content': 'REST API, webscraper, webapp' },
