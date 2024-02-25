@@ -5,28 +5,3 @@
 // ----------------------------------------------------- //
 
 
-footer {
-  color: var(--white-text);
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin-top: var(--double-space);
-  padding: 1rem;
-
-  p {
-    color: var(--white-text);
-  }
-
-  @media only screen and (max-width: 860px){
-    display: block;
-    text-align: center;
-  }
-
-}
-
-footer, footer .tagline, footer p  {
-  @media only screen and (max-width: 860px){
-    display: block;
-    text-align: center;
-  }
-}

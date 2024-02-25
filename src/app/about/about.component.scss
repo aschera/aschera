@@ -4,14 +4,17 @@
 border: #ffecb2;
 heading: #01257b;
 */
-
-
-
+#milestonesChart {
+  height: 184px;
+  width: 268px;
+}
 
 /* --------- img --------------------- */
-img {
-  height: 100%;
-  width:100%;
+img{
+  width: auto;
+  border-radius: 10px; /* Adjust the value as needed */
+  border: 2px solid var(--pale-yellow);
+  height:20rem;
 }
 
 /* --------- text --------------------- */
@@ -35,29 +38,41 @@ h3::first-letter {
 
 /* --------- wrappers --------------------- */
 section {
-  padding: 5rem 0;
-  margin-bottom: 10rem;
+  padding: 0;
+
 }
 
 .row {
+  padding: 5rem 1rem;
   overflow: hidden;
   width: 100%;
   display: flex;  
   justify-content: center;
   flex-direction: row;
-  padding: 0 1rem;
+  border: 2px solid var(--pale-yellow);
 }
 
 .text-wrapper {
+  width: 40%;
+  margin-left: 6%;
+}
+
+.text-wrapper.three {
   width: 30%;
   margin-left: 6%;
 }
 
+.text-wrapper.image {
+height:100%;
+display: flex;
+
+}
+
 /* --------- border --------------------- */
 .dashed {
-  border-top: 10px solid #ffecb2;
-  border-left: 10px solid #ffecb2;
-  border-bottom: 10px solid #ffecb2;
+  border-top: 10px solid var(--pale-yellow);
+  border-left: 10px solid var(--pale-yellow);
+  border-bottom: 10px solid var(--pale-yellow);
 }
 
 /* --------- mobile view --------------------- */

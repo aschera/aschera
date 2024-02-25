@@ -13,6 +13,12 @@ import { RecentComponent } from './recent/recent.component';
 import { DesignComponent } from './design/design.component';
 import { SocialComponent } from './social/social.component';
 import { CourseComponent } from './course/course.component';
+import { PowerBiProjectsComponent } from './power-bi-projects/power-bi-projects.component';
+import { AppRoutingModule } from './app-routing.module'; // CLI imports AppRoutingModule
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { HomePageComponent } from './home-page/home-page.component';
+import { MilestonesChartComponent } from './milestones-chart/milestones-chart.component';
 
 @NgModule({
   declarations: [
@@ -26,14 +32,19 @@ import { CourseComponent } from './course/course.component';
     RecentComponent,
     DesignComponent,
     SocialComponent,
-    CourseComponent
+    CourseComponent,
+    PowerBiProjectsComponent,
+    HomePageComponent,
+    MilestonesChartComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
   imports: [
     BrowserAnimationsModule,
     MatSliderModule,
-    MaterialModule
+    MaterialModule,
+    BrowserModule,
+    AppRoutingModule,    // CLI adds AppRoutingModule to the AppModule's imports array
   ]
 })
 export class AppModule { }

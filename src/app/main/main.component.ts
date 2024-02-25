@@ -20,7 +20,7 @@ export class MainComponent implements OnInit {
       'home',
       'about',
       'contact',
-      'work',
+      'projects',
     ],
 
   }

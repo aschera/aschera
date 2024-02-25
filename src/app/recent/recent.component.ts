@@ -14,8 +14,8 @@ export class RecentComponent implements OnInit {
 
   jsonObj = {
 
-    'title': 'Here you find my awesome work',
-    'subtitle': 'Amazing projects and ideas',
+    'title': 'Show and Tell',
+    'subtitle': 'My Amazing projects',
 
     'table': {
 
@@ -33,7 +33,43 @@ export class RecentComponent implements OnInit {
       ],
 
       'rows':
-        [ 
+      [     
+        [
+          { 'class': 'mobile', 'content': 'Discrimination-Aware Mortgage Approval Predictor' },
+          { 'class': 'not-mobile', 'content': 'Agile Project methodology' },
+          { 'class': 'not-mobile', 'content': 'Predictive Modeling in Mortgage Approval' },
+          { 'class': 'mobile', 'content': 'Python' },
+          { 'class': 'not-mobile', 'content': 'Conda, Jupyter Notebook' },
+          { 'class': 'mobile', 'content': 'National Home Mortgage Disclosure Act (HMDA) dataset' },
+          { 'class': 'not-mobile', 'content': 'Scikit-learn, XGBoost' },
+          { 'class': 'mobile', 'content': '2023' },
+          { 'class': 'not-mobile', 'content': 'Predictive Modeling for Mortgage Approval with Discrimination Awareness' },
+          { 'class': 'mobile', 'contenturl': "<a href='https://github.com/aschera/credit_risk_predictor' target='_blank' class='project-link' title='link to credit risk project'>link </a>" }
+        ],
+        [
+        { 'class': 'mobile', 'content': 'Detecting emotion on images/video of human faces.' },
+        { 'class': 'not-mobile', 'content': 'Deep Learning' },
+        { 'class': 'not-mobile', 'content': 'Computer Vision' },
+        { 'class': 'mobile', 'content': 'Python' },
+        { 'class': 'not-mobile', 'content': 'Keras' },
+        { 'class': 'mobile', 'content': '"Face Expression Recognition" from Kaggle.' },
+        { 'class': 'not-mobile', 'content': 'Keras, Tensorflow' },
+        { 'class': 'mobile', 'content': '2023' },
+        { 'class': 'not-mobile', 'content': 'Emotion Detection using Deep Learning' },
+        { 'class': 'mobile', 'contenturl': "<a href='https://github.com/aschera/deepLearning_faceRecognition' target='_blank' class='project-link' title='link to face recognition project'>link </a>" }
+      ],
+        [           
+          { 'class': 'mobile', 'content': 'Meat Sales analytics dashboard' },
+          { 'class': 'not-mobile', 'content': 'Power BI report' },
+          { 'class': 'not-mobile', 'content': 'Data Storytelling' },
+          { 'class': 'mobile', 'content': 'Dax' },
+          { 'class': 'not-mobile', 'content': 'Power BI' },
+          { 'class': 'mobile', 'content': 'relational database' },
+          { 'class': 'not-mobile', 'content': 'built-in visualisations' },
+          { 'class': 'mobile', 'content': '2023' },
+          { 'class': 'not-mobile', 'content': 'school project' },
+          { 'class': 'mobile', 'contenturl': "<a href='https://github.com/aschera/meat-visuals' target='_blank' class='project-link' title='link to meat dashboard project'>link </a>" }
+        ],
           [
             { 'class': 'mobile', 'content': 'MNIST image classification' },
             { 'class': 'not-mobile', 'content': 'Jupyter Notebook' },
@@ -44,7 +80,8 @@ export class RecentComponent implements OnInit {
             { 'class': 'not-mobile', 'content': 'a lot different python stuff.' },
             { 'class': 'mobile', 'content': '2023' },
             { 'class': 'not-mobile', 'content': 'school project' },
-            { 'class': 'mobile', 'contenturl': 'https://github.com/aschera/mnist_exploration' }
+            { 'class': 'mobile', 'contenturl': "<a href='https://github.com/aschera/mnist_exploration' target='_blank' class='project-link' title='link to MNIST image classification project'>link </a>" }
+            
           ],
           [
             { 'class': 'mobile', 'content': 'Portfolio App ' },
@@ -56,7 +93,8 @@ export class RecentComponent implements OnInit {
             { 'class': 'not-mobile', 'content': 'Materialize, Fontawesome' },
             { 'class': 'mobile', 'content': '2023' },
             { 'class': 'not-mobile', 'content': 'personal project' },
-            { 'class': 'mobile', 'contenturl': 'https://github.com/aschera/aschera' }
+            { 'class': 'mobile', 'contenturl': "<a href='https://github.com/aschera/aschera' target='_blank' class='project-link' title='link to Portfolio App project'>link </a>" }
+            
           ],
           [
             { 'class': 'mobile', 'content': 'Craft Beer API ' },
@@ -68,7 +106,8 @@ export class RecentComponent implements OnInit {
             { 'class': 'not-mobile', 'content': 'Materialize, Beautifulsoup' },
             { 'class': 'mobile', 'content': '2023' },
             { 'class': 'not-mobile', 'content': 'school project' },
-            { 'class': 'mobile', 'contenturl': 'https://github.com/aschera/FinalPythonAssignment' }
+            { 'class': 'mobile', 'contenturl':  "<a href='https://github.com/aschera/FinalPythonAssignment' target='_blank' class='project-link' title='link to Craft Beer API project'>link </a>" }
+           
           ],
           [
             { 'class': 'mobile', 'content': 'Movie Database' },
@@ -80,7 +119,8 @@ export class RecentComponent implements OnInit {
             { 'class': 'not-mobile', 'content': 'Fontawesome' },
             { 'class': 'mobile', 'content': '2022' },
             { 'class': 'not-mobile', 'content': 'job application' },
-            { 'class': 'mobile', 'contenturl': 'https://a-long-time-ago.netlify.app/' },
+            { 'class': 'mobile', 'contenturl': "<a href='https://a-long-time-ago.netlify.app/' target='_blank' class='project-link' title='link to Movie Database project'>link </a>" },
+            
           ]
         ]
     }

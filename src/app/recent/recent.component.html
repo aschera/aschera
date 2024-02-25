@@ -1,4 +1,4 @@
-<section id="work" class="recent dashed">
+<section id="projects" class="recent dashed">
   <div class="featured">
     <div class="title">
       <h3>{{jsonObj.title}}</h3>
@@ -25,7 +25,8 @@
                   {{ row.content }}
                 </span>
                 <ng-template #elseBlock>
-                  <a href='{{row.contenturl}}' target="_blank" class="project-link" title="link to project">link </a>
+                  <div [innerHTML]=row.contenturl></div>
+                  
                 </ng-template>
               </td>
             </tr>

@@ -1,10 +1,7 @@
-<section id="main" class="home">
+<section id="home" class="home">
   <div class="start">
     <div class="menu">
-      <div class="heading">
-        <i class="material-icons sun">sunny</i>
-        <h1> {{jsonObj.title}}</h1>
-      </div>
+
       <ul>
         <li *ngFor='let item of jsonObj.menu'>
           <a class="main-menu-link" href="#{{item}}" title="link to {{item}}">
@@ -13,5 +10,21 @@
         </li>
       </ul>
     </div>
+
+    <div class="flex-box">
+      <span>
+        <h1 class="name" style="text-align: left;">Christina Bögh</h1>
+      </span>
+      <span class="image-wrap"> 
+        <img 
+        src="../../assets/images/rag.gif" 
+        alt="" title="christina-header"  
+        sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, 
+        (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1342px, 100vw" 
+        class="image">
+      </span>
+    </div>
+
+    
   </div>
 </section>
