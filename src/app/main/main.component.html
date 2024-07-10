@@ -1,30 +1,32 @@
-<section id="home" class="home">
-  <div class="start">
-    <div class="menu">
+<nav class="nav">
+  <h1> Portfolio </h1>
 
-      <ul>
-        <li *ngFor='let item of jsonObj.menu'>
-          <a class="main-menu-link" href="#{{item}}" title="link to {{item}}">
-            {{item}}
-          </a>
-        </li>
-      </ul>
-    </div>
+  <div class="nav_top">
 
-    <div class="flex-box">
-      <span>
-        <h1 class="name" style="text-align: left;">Christina Bögh</h1>
-      </span>
-      <span class="image-wrap"> 
-        <img 
-        src="../../assets/images/rag.gif" 
-        alt="" title="christina-header"  
-        sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, 
-        (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1342px, 100vw" 
-        class="image">
-      </span>
-    </div>
+    <div class="nav_left">
+      
+        <h2> @Christina Bögh </h2>
+      
+    </div> <!-- end nav_left -->
 
-    
-  </div>
-</section>
+    <div class="nav_right">
+
+      <a class="word" *ngFor="let item of jsonObj.menu" href="#{{item}}" title="link to {{item}}">
+        <!-- letters -->
+        <span class="char" *ngFor="let letter of item.split('')" style="display: inline-block; opacity: 1;">
+          {{letter}} 
+        </span>
+      </a> <!-- end word -->
+
+      <div class="word" *ngFor="let item of external.link">
+        <a class="char" [routerLink]="['/projects-overview']" target="" title="link to {{item}}">
+          <span *ngFor="let letter of item.split('')" class="char" style="display: inline-block; opacity: 1;">
+            {{letter}} 
+          </span>
+        </a>
+      </div> <!-- end word -->
+
+    </div> <!-- end nav_right -->
+
+  </div> <!-- end nav_top -->
+</nav>

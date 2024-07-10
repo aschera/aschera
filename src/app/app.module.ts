@@ -19,6 +19,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { MilestonesChartComponent } from './milestones-chart/milestones-chart.component';
+import { ProjectsOverviewComponent } from './projects-overview/projects-overview.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { MilestonesChartComponent } from './milestones-chart/milestones-chart.co
     CourseComponent,
     PowerBiProjectsComponent,
     HomePageComponent,
-    MilestonesChartComponent
+    MilestonesChartComponent,
+    ProjectsOverviewComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -45,6 +48,7 @@ import { MilestonesChartComponent } from './milestones-chart/milestones-chart.co
     MaterialModule,
     BrowserModule,
     AppRoutingModule,    // CLI adds AppRoutingModule to the AppModule's imports array
+    HttpClientModule,
   ]
 })
 export class AppModule { }

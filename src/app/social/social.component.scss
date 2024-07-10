@@ -2,6 +2,13 @@
 
 /* border and links: var(--pink)  // #C648C6;*/
 
+
+h1, h2, .word, span, p, a {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* --------- section wrapper --------------------- */
 
 .social {
@@ -120,8 +127,7 @@ header {
   align-content: center;
 
   p {
-    font-family: "Cousine", Menlo, Monaco, Consolas, "Lucida Console", monospace;
-    color: #FFFFFF;
+    color:#FFFFFF;
     line-height: 22px;
     letter-spacing: normal;
     margin-bottom: 18.75px;
@@ -151,8 +157,6 @@ header {
 a.social-link {
   $linkcolor-hover: #FFFFFF;
   $linkcolor: #C648C6;
-
-  font-family: "Oswald", Sans-serif;
   font-weight: 200;
   letter-spacing: 0.1rem;
   color: $linkcolor;

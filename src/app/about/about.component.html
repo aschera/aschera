@@ -1,116 +1,35 @@
-<section id="about" class="dashed ">
+<section id="stories" class="dashed">
 
-  <!-- WHO AM I? -->
-  <div class="row image">
-    <div class="text-wrapper">
-      <h3>
-        Who Am I?
-      </h3>
-      <p>
-        <span>
-          Hi, my name is <b>Christina</b>. I’m based in Gothenburg, Sweden, currently studying to become a <b>data
-            scientist</b> and
-          expected to complete my studies by the spring of 2024. Additionally, I hold a <b>Bachelor’s degree in Computer
-            Science</b>.
-        </span>
-        <span>My goal is to work with advanced data technologies and provide
-          visualizations that help people make better decisions.
-        </span>
-        <br>
-      </p>
+    <div class="container">
+
+        <h2> Recent publications </h2>
+        <div class="row">
+
+            <div class="item col-md-6 mb-4" *ngFor="let post of posts">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        
+                        <b>Categories: </b>
+                        <br>
+                        <span class="category" *ngFor="let i of post.categories">
+                            <span> {{ i }} </span> 
+                        </span>
+                        <br><br>
+                        <p> Published on {{ post.pubDate | date }} </p>
+                        <br>
+                        <a [href]="post.link" class="btn btn-primary">
+                            Read it on Medium
+                        </a>
+                        <svg viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; position: relative;">
+                            <path d="M6.49194 3.516H5.67594L5.67594 2.052L5.74794 1.272L5.71194 1.26L4.94394 2.124L0.911938 6.156L0.335937 5.58L4.36794 1.548L5.23194 0.78L5.21994 0.743999L4.43994 0.816L2.97594 0.816V0L6.49194 0L6.49194 3.516Z" fill="#000000"></path>
+                        </svg>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="text-wrapper image">
-      <img src="../assets/images/me.jpg">
-    </div>
-  </div>
 
-  <!-- WHAT SETS ME APART-->
-  <!-- WHY CHOOSE ME? -->
-  <div class="row">
-    <div class="text-wrapper">
-      <h3>
-        What Sets Me Apart
-      </h3>
-      <p>
-        <span>
-          I’m a passionate knowledge seeker with a lifelong dedication to <b>problem-solving</b> and improving
-          the world around
-          me. This mindset carries over to my approach to analyzing large data sets,
-          where I thrive on <b>discovering
-            solutions to complex issues</b> and uncovering patterns that have gone unnoticed by others.
-        </span>
-        <br>
-      </p>
-    </div>
-    <div class="text-wrapper">
-      <h3>
-        Why Choose Me?
-      </h3>
-      <p>
-        <span>
-          <b>Front-End Expertise: </b>
-          With over four years of experience as a front-end developer,
-          specializing in web solutions for low-code technology, marketing,
-          and e-commerce, I bring a unique blend of skills to the table.
-        </span>
-        <span>
-          <b>User-Centric Approach:</b>
-          My strong understanding of user experience,
-          accessibility, and programming enables me to bridge the gap between
-          users and analysts seamlessly.
-        </span>
-        <br>
-      </p>
-    </div>
-  </div>
-
-  <!-- Chart will be rendered here -->
-  <app-milestones-chart></app-milestones-chart>
-
-  <div class="row">
-    <div class="text-wrapper image" style="align-self: right; width:30vw;height: auto;">
-      <img src="../assets/images/ikigai.png">
-    </div>
-    <div class="text-wrapper">
-      <h3>
-        My Ikigai: Data Science
-      </h3>
-      <p>
-        <span>
-          
-            <b>"Passion": </b>"Solve hard problems and explain them easily.",<br>
-            <b>"Vocation": </b>"Programming, science, writing, grit.",<br>
-            <b>"Mission":</b> "Learn from the past, understand how systems actually work and offer solutions.",<br>
-            <b>"Profession": </b>"Use data to create insights which solve business problems.",<br>
-          
-        </span>
-        <br>
-      </p>
-    </div>
-  </div>
-
-  <!--WHAT YOU´LL FIND HERE -->
-  <div class="row">
-    <div class="text-wrapper three">
-      <h3>
-        Ready to Collaborate?
-      </h3>
-      <p>
-        <span>
-
-
-          I'm excited to embark on new projects, collaborate with fellow enthusiasts,
-          and contribute to impactful initiatives.
-          <b>Let's connect</b> and explore how we can achieve great things together.
-        </span>
-        <br>
-      </p>
-    </div>
-  </div>
-
-
-
-
-  <div>
-  </div>
 </section>

@@ -1,0 +1,330 @@
+/* Main colors: */
+
+/* 
+border: #fff
+ul, li: rgb(31, 2, 2);
+menu, link: #f414d4;
+*/
+
+
+
+
+/* --------- wrapper --------------------- */
+
+.home {
+  min-width: 480px;
+  transition: all 0.1s ease-in-out;
+}
+
+.start {
+  margin-bottom: 0;
+  margin-top: -1rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.flex-box {
+  background-image: 
+    linear-gradient(to bottom right, white 50%, var(--pale-yellow) 50%);
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  direction: ltr;
+  position: relative;
+  justify-content: right;
+  align-content: end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.1s ease-in-out;
+}
+
+.name {
+  background-image: 
+  linear-gradient(to bottom left, white 70%, var(--pale-yellow) 30%);
+  opacity: 0;
+  /* Start with 0 opacity */
+  animation: fadeInLeft 3s forwards;
+  /* Animation applied to the name */
+  text-align: left;
+  /* Ensuring text alignment */
+  margin-top: 20vh !important;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1em;
+  width: 40vw;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Define the animation */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+    /* Start from the left */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    /* Move to its original position */
+  }
+}
+
+/* Style for the text before the name */
+.name::before {
+  content: "Portfolio:";
+  font-style: italic;
+  font-size: .5em;
+  position: absolute;
+  left: 1rem;
+  top: -2em;
+  font-weight: 200;
+  color: black;
+  text-transform: capitalize;
+}
+
+/* Style for the text before the name */
+.name::after {
+  content: "Data Science and Analytics";
+  font-style: italic;
+  font-size: 1rem;
+  position: absolute;
+  left: 1rem;
+  top: 2em;
+  font-weight: 200;
+  color: black;
+  text-transform: capitalize;
+}
+
+
+.flex-box span {
+  width: 33.3333%;
+  margin-right: 0;
+  -webkit-box-ordinal-group: 2;
+  order: 1;
+  max-width: 100%;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  padding-left: 10vh;
+  position: relative;
+  z-index: 2;
+  min-height: 1px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  mix-blend-mode: unset !important;
+  transition: all 0.1s ease-in-out;
+}
+
+.start .image-wrap {
+  overflow: hidden;
+  /* Ensure the image doesn't overflow its container */
+  position: relative;
+  /* Required for absolute positioning */
+  display: flex;
+  max-width: 100%;
+  width: 66.667%;
+  transition: all 0.1s ease-in-out;
+}
+
+.start .image {
+  opacity: 0;
+  /* Start with 0 opacity */
+  animation: fadeInRight 1.5s forwards;
+  /* Animation applied to the image */
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  transition: all 0.1s ease-in-out;
+}
+
+/* Define the animation */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+    /* Start from the right */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    /* Move to its original position */
+  }
+}
+
+section {
+  padding: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.start .cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  transition: all 0.1s ease-in-out;
+}
+
+.start p {
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* --------- list--------------------- */
+ul,
+li {
+  color: rgb(31, 2, 2);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-width: 290px;
+}
+
+li {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms ease;
+  outline: 0 !important;
+  text-decoration: none;
+}
+
+/* --------- menu --------------------- */
+.menu {
+  top: 0;
+  position: fixed;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid var(--pale-yellow);
+  box-shadow: rgb(0 0 0 / 50%) 0 8px 8px 0;
+  z-index: 9999;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  margin: 1em;
+  padding-left: 40px;
+}
+
+h1,
+.sun {
+  padding: 0 1rem;
+  font-size: 20px;
+  color: var(--baby-blue);
+}
+
+/* --------- links--------------------- */
+a.main-menu-link {
+  $linkcolor-hover: var(--bright-yellow);
+  $linkcolor: var(--pale-yellow);
+
+  font-family: "Oswald", Sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: $linkcolor;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 1px var(--pale-yellow);
+  /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=var(--pale-yellow), Strength=1);
+  /* IE<10 */
+
+  &:hover {
+    color: $linkcolor-hover;
+    transition: all 0.1s ease-in-out;
+
+    svg {
+      fill: $linkcolor-hover;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+
+  svg {
+    fill: $linkcolor;
+  }
+}
+
+/* --------- mobile view --------------------- */
+
+@media only screen and (max-width: 865px) {
+  .start {
+    margin-bottom: 0;
+  }
+
+  .flex-box span {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .name {
+    font-size: 18px;
+
+  }
+
+  .menu {
+    left: 0;
+    padding: 0 0.3rem;
+  }
+
+  section {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .heading {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    justify-content: flex-end;
+    width: 60vw;
+    height: 5vh;
+    margin-left: 1rem;
+  }
+
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
+    width: 25%
+  }
+
+  ul li a {
+    font-family: "Oswald", Sans-serif;
+    font-size: 1rem;
+    text-shadow: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .start .cont {
+    top: 30vh
+  }
+
+  .start p {
+    font-size: 16px
+  }
+}

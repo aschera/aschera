@@ -1,330 +1,109 @@
-/* Main colors: */
-
-/* 
-border: #fff
-ul, li: rgb(31, 2, 2);
-menu, link: #f414d4;
-*/
-
-
-
-
-/* --------- wrapper --------------------- */
-
-.home {
-  min-width: 480px;
-  transition: all 0.1s ease-in-out;
-}
-
-.start {
-  margin-bottom: 0;
-  margin-top: -1rem;
-  transition: all 0.1s ease-in-out;
-}
-
-.flex-box {
-  background-image: 
-    linear-gradient(to bottom right, white 50%, var(--pale-yellow) 50%);
-  padding-top: 0px;
-  padding-bottom: 0px;
+.nav {
   display: flex;
-  direction: ltr;
-  position: relative;
-  justify-content: right;
-  align-content: end;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all 0.1s ease-in-out;
+  align-items: center;  /* Center items vertically */
+  justify-content: space-between;  /* Space out items evenly */
+  padding: var(--regular-space);  /* Optional padding for spacing */
 }
 
-.name {
-  background-image: 
-  linear-gradient(to bottom left, white 70%, var(--pale-yellow) 30%);
-  opacity: 0;
-  /* Start with 0 opacity */
-  animation: fadeInLeft 3s forwards;
-  /* Animation applied to the name */
-  text-align: left;
-  /* Ensuring text alignment */
-  margin-top: 20vh !important;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 1em;
-  width: 40vw;
-  transition: all 0.1s ease-in-out;
+h1, h2, .word, span, span.char {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Define the animation */
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-    /* Start from the left */
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-    /* Move to its original position */
-  }
+.word, span, span.char {
+  font-size: small;
 }
 
-/* Style for the text before the name */
-.name::before {
-  content: "Portfolio:";
-  font-style: italic;
-  font-size: .5em;
-  position: absolute;
-  left: 1rem;
-  top: -2em;
-  font-weight: 200;
-  color: black;
-  text-transform: capitalize;
-}
-
-/* Style for the text before the name */
-.name::after {
-  content: "Data Science and Analytics";
-  font-style: italic;
-  font-size: 1rem;
-  position: absolute;
-  left: 1rem;
-  top: 2em;
-  font-weight: 200;
-  color: black;
-  text-transform: capitalize;
-}
-
-
-.flex-box span {
-  width: 33.3333%;
-  margin-right: 0;
-  -webkit-box-ordinal-group: 2;
-  order: 1;
-  max-width: 100%;
-  padding-top: 7vh;
-  padding-bottom: 7vh;
-  padding-left: 10vh;
-  position: relative;
-  z-index: 2;
-  min-height: 1px;
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  mix-blend-mode: unset !important;
-  transition: all 0.1s ease-in-out;
-}
-
-.start .image-wrap {
-  overflow: hidden;
-  /* Ensure the image doesn't overflow its container */
-  position: relative;
-  /* Required for absolute positioning */
+.nav_top {
   display: flex;
-  max-width: 100%;
-  width: 66.667%;
-  transition: all 0.1s ease-in-out;
+  width: 100%;  /* Ensure it takes full width */
+  justify-content: space-between;  /* Space between left and right sections */
+  align-items: center;  /* Center items vertically */
+  margin-left: var(--regular-space);
 }
 
-.start .image {
-  opacity: 0;
-  /* Start with 0 opacity */
-  animation: fadeInRight 1.5s forwards;
-  /* Animation applied to the image */
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-  transition: all 0.1s ease-in-out;
-}
-
-/* Define the animation */
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-    /* Start from the right */
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-    /* Move to its original position */
-  }
-}
-
-section {
-  padding: 0;
-  transition: all 0.1s ease-in-out;
-}
-
-.start .cont {
+.nav_left {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
-  transition: all 0.1s ease-in-out;
+  align-items: center;
 }
 
-.start p {
+.nav_right {
   display: flex;
-  padding: 1rem;
-  justify-content: flex-end;
   align-items: center;
 }
 
-/* --------- list--------------------- */
-ul,
-li {
-  color: rgb(31, 2, 2);
-}
-
-ul {
+.word {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  min-width: 290px;
+  margin-left: var(--regular-space);  /* Optional margin between words */
+  position: relative; /* Needed for z-index stacking context */
 }
 
-li {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 150ms ease;
-  outline: 0 !important;
-  text-decoration: none;
-}
-
-/* --------- menu --------------------- */
-.menu {
-  top: 0;
-  position: fixed;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-
-  width: 100%;
-  background-color: black;
-  border-bottom: 1px solid var(--pale-yellow);
-  box-shadow: rgb(0 0 0 / 50%) 0 8px 8px 0;
-  z-index: 9999;
-}
-
-.heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-
-  margin: 1em;
-  padding-left: 40px;
-}
-
-h1,
-.sun {
-  padding: 0 1rem;
-  font-size: 20px;
-  color: var(--baby-blue);
-}
-
-/* --------- links--------------------- */
-a.main-menu-link {
-  $linkcolor-hover: var(--bright-yellow);
-  $linkcolor: var(--pale-yellow);
-
-  font-family: "Oswald", Sans-serif;
-  font-weight: 200;
-  letter-spacing: 0.1rem;
+.char {
+  display: inline-block;
+  opacity: 1;
   text-transform: uppercase;
-  color: $linkcolor;
-  font-size: 1.3rem;
-  text-shadow: 1px 1px 1px var(--pale-yellow);
-  /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
-  filter: progid:DXImageTransform.Microsoft.Glow(Color=var(--pale-yellow), Strength=1);
-  /* IE<10 */
+  transition: background-color 0.1s, color 0.1s; /* Transition for instant full word highlight */
+}
 
-  &:hover {
-    color: $linkcolor-hover;
-    transition: all 0.1s ease-in-out;
-
-    svg {
-      fill: $linkcolor-hover;
-      transition: all 0.1s ease-in-out;
-    }
+@keyframes colorChange {
+  0% {
+    color: var(--white-text);
+    background-color: var(--pink);
   }
-
-  svg {
-    fill: $linkcolor;
+  100% {
+    color: var(--pink);
+    background-color: var(--white-text);
   }
 }
 
-/* --------- mobile view --------------------- */
-
-@media only screen and (max-width: 865px) {
-  .start {
-    margin-bottom: 0;
-  }
-
-  .flex-box span {
-    padding-top: 0;
-    padding-left: 0;
-  }
-
-  .name {
-    font-size: 18px;
-
-  }
-
-  .menu {
-    left: 0;
-    padding: 0 0.3rem;
-  }
-
-  section {
-    margin-bottom: 0;
-    margin-top: 1rem;
-    padding: 0;
-  }
-
-  .heading {
-    margin: 0;
-    padding: 0;
-  }
-
-  ul {
-    justify-content: flex-end;
-    width: 60vw;
-    height: 5vh;
-    margin-left: 1rem;
-  }
-
-  ul,
-  li {
-    padding: 0;
-    margin: 0;
-    width: 25%
-  }
-
-  ul li a {
-    font-family: "Oswald", Sans-serif;
-    font-size: 1rem;
-    text-shadow: none;
-  }
+.word:hover .char {
+  animation: colorChange 0.1s forwards;
+  animation-delay: calc(var(--char-index) * 0.1s);
 }
 
-@media screen and (max-width: 768px) {
-  .start .cont {
-    top: 30vh
-  }
+.word:hover {
+  z-index: 1; /* Ensure this word's letters are animated above others */
+}
 
-  .start p {
-    font-size: 16px
-  }
+.word:hover .char:nth-child(1) {
+  --char-index: 0;
+}
+
+.word:hover .char:nth-child(2) {
+  --char-index: 1;
+}
+
+.word:hover .char:nth-child(3) {
+  --char-index: 2;
+}
+
+.word:hover .char:nth-child(4) {
+  --char-index: 3;
+}
+
+.word:hover .char:nth-child(5) {
+  --char-index: 4;
+}
+
+.word:hover .char:nth-child(6) {
+  --char-index: 5;
+}
+
+.word:hover .char:nth-child(7) {
+  --char-index: 6;
+}
+
+.word:hover .char:nth-child(8) {
+  --char-index: 7;
+}
+
+.word:hover .char:nth-child(9) {
+  --char-index: 8;
+}
+
+/* Ensure the entire word remains highlighted after the animation when hovering */
+.word:hover .char {
+  background-color: var(--pink);
+  color: var(--white-text);
 }

@@ -9,19 +9,21 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.');
   }
 
   jsonObj = {
-
-    'title' : 'Christinas Portfolio',
-
+    'title': 'Christinas Portfolio',
     'menu': [
       'home',
-      'about',
+      'stories',
       'contact',
-      'projects',
     ],
+  }
 
+  external = {
+    'link': [
+      'projects'
+    ],
   }
 }
